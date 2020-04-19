@@ -26,3 +26,4 @@ while player == False:
   else:
     print("Not a valid input")
 
+print("Okay")
