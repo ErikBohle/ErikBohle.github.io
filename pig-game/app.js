@@ -30,17 +30,15 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
     diceDOM.style.display = "block";
     diceDOM.src = "image/dice-" + dice + ".png";
 
-    //3. update the score if the rolled number was not a 1
+    //3. Update the round score IF the rolled number was NOT a 1
     if (dice !== 1) {
-      //add score
+      //Add score
       roundScore += dice;
-      document.querySelector(
-        "#current-" + activePlayer
-      ).textContent = roundScore;
-    } else {
-      nextPlayer;
-      gam;
-    }
+      document.querySelector('#current-' + activePlayer).textContent = roundScore;
+  } else {
+      //Next player
+      nextPlayer();
+  }
   }
 }); //this is an anonymous function
 
@@ -81,7 +79,7 @@ function nextPlayer() {
   document.querySelector(".player-0-panel").classList.toggle("active");
   document.querySelector(".player-1-panel").classList.toggle("active");
   document.querySelector(".dice").style.display = "none";
-};
+}
 
 document.querySelector(".btn-new").addEventListener("click", init);
 
@@ -104,4 +102,4 @@ function init() {
   document.querySelector(".player-1-panel").classList.remove("winner");
   document.querySelector(".player-1-panel").classList.remove("active");
   document.querySelector(".player-0-panel").classList.add("active");
-};
+}
