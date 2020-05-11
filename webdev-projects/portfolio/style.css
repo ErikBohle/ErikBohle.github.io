@@ -3,16 +3,19 @@
 body {
   background: linear-gradient(
     to right, 
-    #ff9e2c 0%, 
-    #ff9e2c 50%, 
-    #b6701e 50%, 
-    #b6701e 100%
+    #190061 0%, 
+    #190061 50%, 
+    #0c0032 50%, 
+    #0c0032 100%
   );
+  color: white;
 }
 /* portfolio and projects */
 
 #portfolio {
-  text-align: start;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
   font-size: 5rem;
   padding: 1rem;
 }
@@ -27,19 +30,23 @@ body {
 }
 .item {
   
-  width: 10rem;
+  width: 11rem;
   height: 15rem;
   padding: 10px;
-  background-color: white;
+  background-color: #282828;
   border: 2px solid black;
+  border-radius: 25px;
 }
 .item a {
   padding: 4px;
   text-decoration: none;
+  border:#190061 solid 1px;
+  border-radius: 15px; 
+  background-color: #190061;
 }
 .item a:visited {
   text-decoration: none;
-  
+  color: white;
 }
 
 /* Proficiencies */
