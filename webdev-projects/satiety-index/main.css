@@ -1,0 +1,21 @@
+h1 {
+  border: 1px solid rgba(198, 83, 140, 0.88);
+  background: rgba(198, 83, 140, 0.88);
+}
+
+.link {
+  border: 1px solid rgba(198, 83, 140, 0.88);
+}
+
+.link:visited {
+  color: purple;
+}
+
+.link:hover {
+  color: red;
+}
+
+.link:active {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,13 @@
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+h1 {
+  border: 1px solid $border-dark;
+  background: $border-dark;
+}
+.link {
+  border: 1px solid $border-dark;
+  &:visited {color: purple; }
+  &:hover {color: red; }
+  &:active {color: red; }
+}

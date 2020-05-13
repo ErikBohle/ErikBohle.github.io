@@ -1,47 +1,59 @@
 * {box-sizing: border-box;}
+:root {
+  --light-color: #f4f4f4;
+}
 
 body {
-  background: linear-gradient(
-    to right, 
-    #190061 0%, 
-    #190061 50%, 
-    #0c0032 50%, 
-    #0c0032 100%
-  );
-  color: white;
+  background: #eee2dc;
+  color: #123c69;
+  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Proficiencies */
+
+.proficiencies {
+  display: flex;
+}
+
 /* portfolio and projects */
 
 #portfolio {
   display: flex;
-  justify-content: flex-start;
-  text-align: center;
-  font-size: 5rem;
-  padding: 1rem;
+  justify-content: center;
+  font-size: 2rem;
 }
 .Container {
-  position: absolute;
-  right: 50%;
   display: flex;
-  height: 50%;
-  width: 40%;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
+  flex-direction: row;
 }
 .item {
-  
-  width: 11rem;
-  height: 15rem;
-  padding: 10px;
-  background-color: #282828;
-  border: 2px solid black;
-  border-radius: 25px;
+    background: #f4f4f4;
+    border: #ccc solid 2px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+}
+.item1 {
+    background: #f4f4f4;
+    border: #ccc solid 2px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    flex: 1;
+}
+.item1 ul{
+  text-decoration: none;
+  list-style-type: none;
 }
 .item a {
-  padding: 4px;
+  padding: 5px;
+  margin: 5px;
   text-decoration: none;
   border:#190061 solid 1px;
-  border-radius: 15px; 
+  border-radius: 5px; 
   background-color: #190061;
 }
 .item a:visited {
@@ -49,21 +61,7 @@ body {
   color: white;
 }
 
-/* Proficiencies */
 
-.proficiencies {
-  position: absolute;
-  left: 50%;
-  padding: 1rem;
-  font-size: 2rem;
-  
-  
-}
-
-.proficiencies ul li {
-  list-style: none;
-  font-size: 1rem;
-}
 
 /* Sidebar */
 
