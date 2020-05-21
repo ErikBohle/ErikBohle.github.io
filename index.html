@@ -11,9 +11,9 @@
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
 </head>
-<body><div class="main">
+<body><div  class="main">
   <h1>ErikBohle.com</h1>
-  <hr>
+
 <!-- 
   TODO:
   
@@ -30,14 +30,11 @@
 
   - add readme to the github projects
 
-  - add responsiveness for mobile and widescreen
-
-  - remove sidebar in mobile resolution and add the links to the page instead. or make a hamburger menu instead
 -->
 
-
+<header>
 <!-- sidebar -->
-  <div class="sidenav">
+  <div  class="sidenav">
     <!-- <a href="#">View in En/No</a> <BR></BR> -->
     <a id="contact">Portfolio</a> <BR></BR>
     <a id="contact">Resume/CV:</a>
@@ -47,58 +44,75 @@
     <a id="contact">Contact:</a> 
     <a target="blank" href="https://www.linkedin.com/in/erikbohle"><i class="fab fa-linkedin"></i> LinkedIn</a>
     <a target="blank" href="https://github.com/ErikBohle"><i class="fab fa-github-square"></i>
- GitHub</a>
+  GitHub</a>
     <a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a>
     <a href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
-       Codepen</a>
+      Codepen</a>
   </div>
+  <div id="top" class="mobileNav">
+    <!-- <a href="#">View in En/No</a> <BR></BR> -->
+    <ul>
+      <li><a id="contactMobile">Resume/CV:</a><a id="cv" href="#" download="">English<span id="white"> | <span></a><a id="cv" href="#" download="">Norsk</a></li><br>
+      <li><a id="contactMobile">Contact:</a> </li>
+      <li><a target="blank" href="https://www.linkedin.com/in/erikbohle"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+      <li><a target="blank" href="https://github.com/ErikBohle"><i class="fab fa-github-square"></i>
+    GitHub</a></li><br>
+      <li><a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a></li>
+      <li><a href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
+        Codepen</a></li>
+    </ul>
+  </div>
+</header>
 
 
-<!-- Languages -->
 
 <!-- Portfolio and projects -->
-  <H3 id="portfolio">Projects</H2>
-  <div class="Container">
-    <div class="item">
+  <div class="container"> <hr>    <H3 id="portfolio" class="portfolio">Projects</H2></div>
+  <div id="container" class="Container">
+    <div  class="item1">
       <h3>Kombucha Calculator</h3>
-      <a href="https://kombuchacalculator.com/">Website</a><br><br>
+      <a href="https://kombuchacalculator.com/">Website</a>
       <a href="">Code</a>
-      <p>This project i made with vanilla HTML, CSS and JS. <br> And has adsense and ebay integrations</p>
+      <p>This project was made with HTML, CSS and JS. <br> And has adsense and ebay integrations</p>
     </div>
-    <div class="item">
+
+    <div class="item1">
       <h3>Dice game</h3>
-      <a href="/webdev-projects/pig-game/index.html">Live version</a><br><br>
-      <a href="https://codepen.io/erikbohle/pen/JjYvzPP">Code</a>
+        <a href="/webdev-projects/pig-game/index.html">Live version</a>
+        <a href="https://codepen.io/erikbohle/pen/JjYvzPP">Code</a>
       <p>This is a javaScript game i made using DOM manuipulation</p>
     </div>
 
-    <div class="item">       
+    <div class="item1">       
       <h3>Hotel website</h3>
-      <a href="">Live version</a><br><br>
-      <a href="">Code</a>
+        <a href="">Live version</a>
+        <a href="">Code</a>
       <p>This is a project i made through a online course</p>
     </div>
-    <div class="item">     
+    <div class="item1">     
       <h3>Satiety index</h3>
-      <a href="https://www.satietyindex.com/">Live version</a><br><br>
+      <a href="https://www.satietyindex.com/">Live version</a>
       <a href="">Code</a>
       <p>This is a information website about a satiety index, visualising data with Chart.js </p>
     </div>
-    <div class="item item1 ul">
-      <h2 >Languages, frameworks and libraries</h2>
-      <p>HTML, CSS3, JavaScript, Python, SASS</p>
+
 
     </div>
-
+    <!-- Languages -->
+    <div class="languages">
+      <div class="item item1 ul">
+        <h2 >Languages, frameworks and libraries</h2>
+        <p>HTML, CSS3, JavaScript, Python, SASS, Bootstrap, jQuery</p>
+    </div>
 
 
 
 </div>
 <div class="container">
-
-
-
 </div>
+
+
+<div class="footer"><a href="#top"><strong>Click here to go back to the top</strong></a></div>
     
 
   

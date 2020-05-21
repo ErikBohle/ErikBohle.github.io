@@ -1,34 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/0202afe07a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js"
+      type="text/javascript"
+    ></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body >
-  <!-- Use chart.JS to visualize the data -->
-  <!-- Use sass and bootstrap in this project -->
-  <!-- Try to use mongoDB to fetch data from database? -->
-  <!-- Input data using script? -->
-  <!-- Site to pull data from http://ernaehrungsdenkwerkstatt.de/fileadmin/user_upload/EDWText/TextElemente/Ernaehrungswissenschaft/Naehrstoffe/Saettigung_Lebensmittel_Satiety_Index.pdf -->
-  <!-- Compare to which of the foods are high in protein - might prove very work intensive -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Use chart.JS to visualize the data -->
+    <!-- Use sass and bootstrap in this project -->
+    <!-- chartjs needs to be written in the same doc -->
+    <!-- Try to use mongoDB to fetch data from database? -->
+    <!-- Input data using script? -->
+    <!-- Site to pull data from http://ernaehrungsdenkwerkstatt.de/fileadmin/user_upload/EDWText/TextElemente/Ernaehrungswissenschaft/Naehrstoffe/Saettigung_Lebensmittel_Satiety_Index.pdf -->
+    <!-- Compare to which of the foods are high in protein - might prove very work intensive -->
 
+    <h1>Chart.js Sample</h1>
 
-  <h1 class="help">faen</h1>
-  <a class="link" href="www.erikbohle.com">faen</a>
-  <script>
-  
-  </script>
+    <canvas id="countries" width="600" height="400"></canvas>
+    <script>
+      var densityCanvas = document.getElementById("densityChart");
 
+      Chart.defaults.global.defaultFontFamily = "Lato";
+      Chart.defaults.global.defaultFontSize = 18;
 
+      var densityData = {
+        label: "Density of Planets (kg/m3)",
+        data: [5427, 5243, 5514, 3933, 1326, 687, 1271, 1638],
+      };
 
-<!-- Bootstrap dependencies jquery, popper, bootstrap -->
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+      var barChart = new Chart(densityCanvas, {
+        type: "bar",
+        data: {
+          labels: [
+            "Mercury",
+            "Venus",
+            "Earth",
+            "Mars",
+            "Jupiter",
+            "Saturn",
+            "Uranus",
+            "Neptune",
+          ],
+          datasets: [densityData],
+        },
+      });
+
+      // Get the context of the canvas element we want to select
+      var countries = document.getElementById("countries").getContext("2d");
+      new Chart(countries).Pie(pieData);
+    </script>
+
+    <!-- Bootstrap dependencies jquery, popper, bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

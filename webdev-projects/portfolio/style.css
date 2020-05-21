@@ -1,82 +1,98 @@
-* {box-sizing: border-box;}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 :root {
   --light-color: #f4f4f4;
 }
 
 body {
-  background: #eee2dc;
-  color: #123c69;
+  background: #f5f6f7;
+  color: #28213fe7;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Proficiencies */
-
-.proficiencies {
-  display: flex;
-}
-
 /* portfolio and projects */
-
 #portfolio {
-  display: flex;
-  justify-content: center;
-  font-size: 2rem;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  font-size: 2.5rem;
 }
+
+#languages {
+  display: -ms-grid;
+  display: grid;
+}
+
 .Container {
-  display: flex;
-  flex-direction: row;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: auto;
+  gap: 1rem;
+  background-color: #f5f6f7;
 }
+
 .item {
-    background: #f4f4f4;
-    border: #ccc solid 2px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    flex: 1;
+  display: -ms-grid;
+  display: grid;
+  background: #f5f6f7;
+  border: #ccc solid 2px;
+  padding: 0.5rem;
+  text-align: center;
+  border-radius: 4px;
 }
+
 .item1 {
-    background: #f4f4f4;
-    border: #ccc solid 2px;
-    margin: 10px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 10px;
-    flex: 1;
+  color: #f1f1f1;
+  max-width: 25%;
+  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
+  background: linear-gradient(to right, #000000, #434343);
+  border: #ccc solid 2px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 100%;
+  text-align: center;
+  border-radius: 10px;
 }
-.item1 ul{
+
+.item1 a {
+  padding: 0.5em 0.5em;
+  margin: 5px;
+  width: 50%;
+  text-decoration: none;
+  border: #111111 solid 2px;
+  border-radius: 5px;
+  background-color: #111111;
+}
+
+.item1 ul {
   text-decoration: none;
   list-style-type: none;
 }
-.item a {
-  padding: 5px;
-  margin: 5px;
-  text-decoration: none;
-  border:#190061 solid 1px;
-  border-radius: 5px; 
-  background-color: #190061;
-}
-.item a:visited {
-  text-decoration: none;
-  color: white;
-}
 
-
+.item1 a:visited {
+  text-decoration: none;
+  color: #f5f6f7;
+}
 
 /* Sidebar */
-
 .sidenav {
-  height: 100%; 
-  width: 160px; 
+  height: 100%;
+  width: 160px;
   position: fixed;
-  z-index: 1; 
-  top: 0; 
+  z-index: 1;
+  top: 0;
   left: 0;
-  background-color: #111; 
-  overflow-x: hidden; 
+  background-color: #111111;
+  overflow-y: hidden;
   padding-top: 20px;
 }
-
 
 .sidenav a {
   padding: 6px 8px 6px 16px;
@@ -85,22 +101,115 @@ body {
   color: #818181;
   display: block;
 }
-#contact:hover {
-  cursor: default;
-  color: #818181;;
-}
 
 .sidenav a:hover {
   color: #f1f1f1;
 }
 
+#contact {
+  font-size: 1.5em;
+}
+
+#contact:hover {
+  cursor: default;
+  color: #818181;
+}
+
+/*mobile nav */
+header {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  display: none;
+  bottom: 25px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+
+.footer a {
+  color: #f5f6f7;
+  text-decoration: none;
+  background-color: #111111;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+.mobileNav {
+  background-color: #111111;
+  display: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  float: inline-start;
+  width: 100%;
+  text-align: center;
+}
+
+.mobileNav ul li {
+  list-style: none;
+  display: inline;
+}
+
+.mobileNav ul li a {
+  padding: 1px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #818181;
+}
+
+.mobileNav ul li a:hover {
+  color: red;
+}
+
+.mobileNav ul li:hover {
+  color: red;
+}
+
+#contactMobile {
+  color: #f5f6f7;
+}
+
+#contactMobile:hover {
+  cursor: default;
+  color: #818181;
+}
+
 /* Style page content */
 .main {
-  margin-left: 10rem; /* Same as the width of the sidebar */
+  margin-left: 10rem;
+  /* Same as the width of the sidebar */
   padding: 0px 10px;
 }
 
-
-@media screen and (max-height: 450px) {
-  .sidenav {display: none;}
+.main h1 {
+  text-align: center;
 }
+
+#white {
+  color: #f5f6f7;
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    display: block;
+  }
+  .sidenav {
+    display: none;
+  }
+  .main {
+    margin-left: 0rem;
+    padding: 0px 10px;
+    margin-top: 6em;
+  }
+  .mobileNav {
+    display: inline;
+  }
+}
+/*# sourceMappingURL=style.css.map */
