@@ -1,0 +1,237 @@
+// variables
+$primaryColor: #2f2d2d;
+$secondaryColor: #f1f1f1;
+$offprimaryColor: #5f5b5b;
+$solidSecondColor: #f4f4f4;
+$bglight:#fff9f9;
+$darkPrimaryColor: rgb(8, 8, 8);
+$primaryFont: 'Roboto', sans-serif;
+// 
+
+:root {
+  --grid-template-areas: inherit;
+  --grid-template-areas: initial;
+  --grid-template-areas: unset;
+}
+
+
+body{
+  background-color: $primaryColor;
+  color: $secondaryColor;
+  font-family: $primaryFont;
+}
+
+//navbar 
+.sidenav {
+  height: 100vh;
+  width: 0vw;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  position: fixed;
+  background-color: $offprimaryColor;
+  padding-top: 2em;
+  overflow-x: hidden;
+  transition: 1s;
+  text-align: center;
+  
+    li{
+      list-style-type: none;
+      padding-bottom: 1em;
+
+      a{
+        display: block;
+        text-decoration: none;
+        color: $solidSecondColor;
+        font-weight: bold;
+        
+        &:visited{
+          color: $primaryColor;
+          color: $solidSecondColor;
+        }
+        &:hover{
+          color: $darkPrimaryColor;
+        }
+      }
+    }
+}
+
+ .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  &input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $bglight;
+  -webkit-transition: .4s;
+  transition: .4s;
+  &:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: $offprimaryColor;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+}
+input:checked + .slider {
+  background-color: $primaryColor;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 40px;
+  &:before {
+    border-radius: 50%;
+  }
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 4em;
+  font-size: 2em;
+  padding: 0.2em;
+}
+#openNav{
+  display: block;
+  position: sticky;
+  width: 100%;
+  background-color: $offprimaryColor;
+  font-size: 1em;
+  cursor: pointer;
+  top: 0;
+  left: 0em;
+  z-index: 0;
+  #titlebar{
+    text-align: center;
+    font-size: 1em;
+    align-self: center;
+
+}
+
+}
+.main {
+  
+  display: grid;
+  width: auto;
+  grid-template-areas: 
+  "velkomst velkomst"
+  "bestill levering"
+  "bilder bilder"
+  "butikk butikk"
+  "faq faq"
+  ;
+  gap: 0.2em;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  #faq {
+    grid-area: faq;
+    width: auto;
+    height: auto;
+    padding: 0em 2em;
+    text-align: center;
+      li{
+      list-style-type: none;
+      font-size: 2em;
+    }
+      p{
+          font-size: 1em;
+      }
+
+
+  }
+  #velkomst{
+    grid-area: velkomst;
+    width: auto;
+    height: auto;
+    padding: 0em 2em;
+    h1{
+      text-decoration: underline;
+      text-align: center;
+    }
+    p{
+      text-decoration: none;
+    }
+  }
+  #levering {
+    grid-area: levering;
+    width: auto;
+    height: auto;
+    padding: 0em 2em;
+    h1{
+      text-decoration: underline;
+      text-align: center;
+    }
+  }
+  #butikk {
+    grid-area: butikk;
+    width: auto;
+    height: auto;
+    grid-template: repeat(auto-fit, 186px);
+    h1{
+      text-decoration: underline;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  #bilder {
+    grid-area: bilder; 
+    width: auto;
+    height: auto;
+    grid-template: repeat(auto-fit, 186px);
+    img{height: 8rem; width: 8rem;}
+    padding: 2em;
+    h1{
+      text-decoration: underline;
+      text-align: center;
+    }
+  }
+  #bestill {
+    grid-area: bestill;
+    width: auto;
+    height: auto;
+    padding: 0em 2em;
+    h1{
+      text-align: center;
+      text-decoration: underline;
+    }
+    p{
+      text-align: center;
+
+    }
+  }
+}
+
+.container{
+  display: grid;
+  background-color: inherit;
+  width: 50vw;
+  height: 25vh;
+  
+}
+
+
+
+

@@ -78,6 +78,10 @@ body {
     text-decoration: none;
     color: $bg-light;
   }
+  a:active {
+    text-decoration: none;
+    color: $bg-mellow;
+  }
 }
 
 /* Sidebar */

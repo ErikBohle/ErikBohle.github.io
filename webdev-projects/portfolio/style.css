@@ -81,6 +81,11 @@ body {
   color: #f5f6f7;
 }
 
+.item1 a:active {
+  text-decoration: none;
+  color: #eee2dc;
+}
+
 /* Sidebar */
 .sidenav {
   height: 100%;
