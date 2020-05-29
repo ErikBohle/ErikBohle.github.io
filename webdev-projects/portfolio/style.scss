@@ -61,6 +61,7 @@ body {
   max-width: 100%;
   text-align: center;
   border-radius: 10px;
+  display: block;
   a {
     padding: 0.5em 0.5em;
     margin: 5px;
@@ -69,19 +70,25 @@ body {
     border:$bg-dark solid 2px;
     border-radius: 5px;
     background-color:$bg-dark;
+    &:hover{
+      color: red;
+    }
+    &:visited {
+    text-decoration: none;
+    color: $bg-mellow;
+    }
+    a:active {
+    text-decoration: none;
+    color: $bg-mellow;
+  }
+  
+
   }
   ul {
     text-decoration: none;
     list-style-type: none;
   }
-  a:visited {
-    text-decoration: none;
-    color: $bg-light;
-  }
-  a:active {
-    text-decoration: none;
-    color: $bg-mellow;
-  }
+  
 }
 
 /* Sidebar */
