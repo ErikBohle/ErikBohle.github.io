@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hvass restaurant</title>
+       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Hvass Restaurant, Se Meny og Bestill Bord Idag!">
+    <link rel="icon"  href="Food.ico" sizes="32x32" type="image/png"/>
+  </head>
+  <body>
+    <button class="navbtn"><i class="fas fa-hamburger fa-3x"></i></button>
+    <div class="topnav">
+        <li>
+          <a href="#home"><img class="logo" href="#home" src="img/1ebb3b73-788a-4b87-b0d4-7ed08b499cff_200x200.png" alt="logo"></a>
+          <a href="#home">Home</a>
+          <a href="#menu">Menu</a>
+          <a href="#bar">Bar</a>
+          <a href="#events">Events</a>
+          <a href="#reservations">Reservations</a>
+          <a href="#location">Location</a>   
+        </li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Language</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">English</a>
+            <a href="languages/norsk.html">Norsk</a>    
+          </div>
+        </div> 
+    </div>
+    <div class="sidenav">  
+        <a href="#home">Top</a>
+        <a href="#menu">Menu</a>
+        <a href="#bar">Bar</a>
+        <a href="#events">Events</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#location">Location</a>  
+        <hr> 
+        <a href="index.html">English</a>
+        <a href="languages/norsk.html">Norsk</a> 
+        <a href="#home"><img class="logo" href="#home" src="img/1ebb3b73-788a-4b87-b0d4-7ed08b499cff_200x200.png" alt="logo"></a>   
+      </div>
+      </div> 
+    </div>
+    <div class="main">
+      <div class="container">
+        <div id="home" data-aos="fade-right" class="item1"><img src="img/sander-dalhuisen-_PQIYcCmQtk-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" class="item2">
+          <section>
+            <h1>Welcome to Hvass Restaurant</h1>
+            <p>The original Hvass, opened in 2015, is located in Oslo, Norway. Hidden on top of a highrise, the restaurant offers amazing views.</p>
+            <p>Hvass' menu showcases local food and lunch offers an ideal backdrop for any special occasions or business meetings. </p>
+          </section>
+        </div>
+        <div data-aos="fade-right"  class="item3 "><img src="img/ismael-trevino-uh0zvg5VjlA-unsplash.jpg" alt=""></div>
+        <div id="menu" data-aos="fade-up" class="item4">
+          <h2>Menu</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae nam quos quidem libero magni beatae deserunt.</p>
+          <a href="#">Winelist</a>
+          <a href="#">A la Carte menu</a>
+        </div>
+        <div class="item5" data-aos="fade-right" ><img  src="img/avi-richards-pYxkImx886M-unsplash.jpg" alt=></div>
+        <div data-aos="fade-up"  id="bar" class="item6">
+          <h2>Bar</h2>
+          <p>
+            It is our daily goal to serve our guests and our community, to be a welcoming space for people to connect and be present. As the unprecedented situation surrounding coronavirus evolves, it is clear that these are no longer practical goals. In order to keep our staff, guests, and the general public safe, effective immediately. This is an ever-changing set of circumstances, and we will share updates when they’re available. To stay up to date with any potential changes at our locations, please sign up for our newsletter or keep checking back. Thank you for your continued support and understanding.</p>
+        </div>
+        <div data-aos="fade-right" class="item7"><img src="img/michael-effendy-xdGigMgUwaQ-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="events" class="item8">
+          <h2>Private events</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellendus fugit est provident tenetur omnis quia, dignissimos repudiandae. Impedit mollitia eveniet enim. Excepturi tempore voluptas temporibus odio culpa! Qui eum nobis ut beatae. Reprehenderit, repellat?</p>
+        </div>
+        <div data-aos="fade-right" class="item9"><img src="img/jakub-kapusnak-1LaCrYx5J7I-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="reservations" class="item10">
+          reservation form
+          <form action="#" method="#">
+            <div class="personal">
+              <input type="text" name="name" placeholder="Name" required>
+              <input type="email" name="email" required placeholder="Email">
+              <input type="text" name="number" required placeholder="Phone Number">
+            </div>
+            <div class="information">
+              <input type="date" name="date" required placeholder="Date">
+              <input type="time" name="time" required placeholder="Time">
+            </div>
+            <div class="adults">
+              <div class="form-group">
+                <label for=""></label>
+                <select class="custom-select" required name="adults" id="">
+                  <option selected>Number of Adults</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="children">
+              <div class="form-group">
+                <label for=""></label>
+                <select class="custom-select" name="children" id="">
+                  <option selected>Number of Children</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="information">
+            <div class="btn">
+              <input type="submit" value="Reserve a table">
+            </div>
+
+            </div>
+            <div class="resBtn"></div>
+          </form>
+        </div>
+        <div data-aos="fade-right" class="item11"><img src="img/emy-90710FOygrg-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="location" class="item12">
+          <iframe src="https://api.jawg.io/maps/6a6f980b-4a7f-4279-8429-ce2296e70545/66df0cab-276e-4df1-9f2e-d8baf9e374e9.html?access-token=Ck4POljiZfzXo96wdoHB6520w4tznppnZQZxhUmG9RBAIva9kTZNj4yXnYTutVT8" width="500px" height="300px"></iframe>
+          <p>Addresse: Storgata Oslo</p>
+          <p>Telefonnummer: +47 123 45 678</p>
+      </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
