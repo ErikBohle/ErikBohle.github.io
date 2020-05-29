@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hvass restaurant</title>
+       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/restaurantWebsite/style.css" />
+    <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
+    <link rel="icon"  href="Food.ico" sizes="32x32" type="image/png"/>
+    <meta name="description" content="Hvass Restaurant, Se Meny og Bestill Bord Idag!">
+  </head>
+
+<!-- Todo:
+
+  put in meta tags
+
+phone number active -> red
+-->
+  <body>
+    <button class="navbtn"><i class="fas fa-hamburger fa-3x"></i></button>
+    <div class="topnav">
+        <li>
+          <a href="#home"><img class="logo" href="#home" src="/restaurantWebsite/img/1ebb3b73-788a-4b87-b0d4-7ed08b499cff_200x200.png" alt="logo"></a>
+          <a href="#home">Hjem</a>
+          <a href="#menu">Meny</a>
+          <a href="#bar">Bar</a>
+          <a href="#events">Selskap</a>
+          <a href="#reservations">Bestill Bord</a>
+          <a href="#location">Beliggenhet</a>   
+        </li>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Språk</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="/restaurantWebsite/languages/norsk.html">Norsk</a>
+            <a href="/restaurantWebsite/index.html">English</a>    
+          </div>
+        </div> 
+    </div>
+    <div class="sidenav">  
+        <a href="#home">Hjem</a>
+        <a href="#menu">Meny</a>
+        <a href="#bar">Bar</a>
+        <a href="#events">Selskap</a>
+        <a href="#reservations">Bestill Bord</a>
+        <a href="#location">Beliggenhet</a>  
+        <hr> 
+        <a href="/restaurantWebsite/languages/norsk.html">Norsk</a>
+        <a href="/restaurantWebsite/index.html">English</a> 
+        <a href="#home"><img class="logo" href="#home" src="/restaurantWebsite/img/1ebb3b73-788a-4b87-b0d4-7ed08b499cff_200x200.png" alt="logo"></a>   
+      </div>
+      </div> 
+    </div>
+    <div class="main">
+      <div class="container">
+        <div id="home" data-aos="fade-right" class="item1"><img src="/restaurantWebsite/img/sander-dalhuisen-_PQIYcCmQtk-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" class="item2">
+          <section>
+            <h1>Welcome to Hvass Restaurant</h1>
+            <p>Den originale Hvass, åpnet først i 2015. Og befinner seg i Oslo, i midten av Storgata.</p>
+            <p>Menyen til Hvass er sesongbasert, og setter trykk på kortreist lokalmat. </p>
+          </section>
+        </div>
+        <div data-aos="fade-right"  class="item3 "><img src="/restaurantWebsite/img/ismael-trevino-uh0zvg5VjlA-unsplash.jpg" alt=""></div>
+        <div id="menu" data-aos="fade-up" class="item4">
+          <h2>Meny</h2>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti repudiandae nam quos quidem libero magni beatae deserunt.</p>
+          <a href="#">Vinliste</a>
+          <a href="#">A la Carte meny</a>
+        </div>
+        <div class="item5" data-aos="fade-right" ><img  src="/restaurantWebsite/img/avi-richards-pYxkImx886M-unsplash.jpg" alt=></div>
+        <div data-aos="fade-up"  id="bar" class="item6">
+          <h2>Bar</h2>
+          <p>
+            Det er vårt mål å servere gjestene, og vårt samfunn, og å være et inklusivt rom hvor folk kan møtes og være seg selv. Det er dessverre ikke praktiske mål lenger. I disse endringstider så må vi sette være kunder, samfunnet og ansatte først. Derfor holder vi stengt til myndighetene sier det er tryggere å åpne dørene igjen. Vi takker dere for deres fortsettende støtte og forståelse.</p>
+        </div>
+        <div data-aos="fade-right" class="item7"><img src="/restaurantWebsite/img/michael-effendy-xdGigMgUwaQ-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="events" class="item8">
+          <h2>Selskap</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellendus fugit est provident tenetur omnis quia, dignissimos repudiandae. Impedit mollitia eveniet enim. Excepturi tempore voluptas temporibus odio culpa! Qui eum nobis ut beatae. Reprehenderit, repellat?</p>
+          
+        </div>
+        <div data-aos="fade-right" class="item9"><img src="/restaurantWebsite/img/jakub-kapusnak-1LaCrYx5J7I-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="reservations" class="item10">
+          Reserver bord
+          <form action="#" method="#">
+            <div class="personal">
+              <input type="text" name="name" placeholder="Navn" required>
+              <input type="email" name="email" required placeholder="Epost">
+              <input type="text" name="number" required placeholder="Telefonnummer">
+            </div>
+            <div class="information">
+              <input type="date" name="date" required placeholder="Dato">
+              <input type="time" name="time" required placeholder="Tid">
+            </div>
+            <div class="adults">
+              <div class="form-group">
+                <label for=""></label>
+                <select class="custom-select" required name="adults" id="">
+                  <option selected>Antall Voksne</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="children">
+              <div class="form-group">
+                <label for=""></label>
+                <select class="custom-select" name="children" id="">
+                  <option selected>Antall barn</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="3">4</option>
+                  <option value="3">5</option>
+                  <option value="3">6</option>
+                </select>
+              </div>
+            </div>
+            <div class="information">
+            <div class="btn">
+              <input type="submit" value="Reserver Bord">
+            </div>
+
+            </div>
+            <div class="resBtn"></div>
+          </form>
+        </div>
+        <div data-aos="fade-right" class="item11"><img src="/restaurantWebsite/img/emy-90710FOygrg-unsplash.jpg" alt=""></div>
+        <div data-aos="fade-up" id="location" class="item12">
+          
+
+          <iframe src="https://api.jawg.io/maps/6a6f980b-4a7f-4279-8429-ce2296e70545/66df0cab-276e-4df1-9f2e-d8baf9e374e9.html?access-token=Ck4POljiZfzXo96wdoHB6520w4tznppnZQZxhUmG9RBAIva9kTZNj4yXnYTutVT8" width="500px" height="300px"></iframe>
+          <p>Addresse: Storgata Oslo</p>
+          <p>Telefonnummer: +47 123 45 678</p>
+
+
+      </div>
+
+    <script src="/restaurantWebsite/app.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
