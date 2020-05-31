@@ -102,8 +102,8 @@ body {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 0.8fr 1fr 1.2fr 1fr 1fr 1fr;
-      grid-template-rows: 0.8fr 1fr 1.2fr 1fr 1fr 1fr;
+  -ms-grid-rows: 0.85fr 1fr 1.2fr 1fr 1fr 1fr;
+      grid-template-rows: 0.85fr 1fr 1.2fr 1fr 1fr 1fr;
   -ms-grid-columns: 1.1fr 2fr;
       grid-template-columns: 1.1fr 2fr;
       grid-template-areas: "pic1 welcome" "pic2 menu" "pic3 bar" "pic4 events" "pic5 reservations" "pic6 map";
