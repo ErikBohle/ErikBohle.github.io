@@ -70,10 +70,7 @@ body {
   border: #111111 solid 2px;
   border-radius: 5px;
   background-color: #111111;
-}
-
-.item1 a:hover {
-  color: red;
+  color: #f1f1f1;
 }
 
 .item1 a:visited {
