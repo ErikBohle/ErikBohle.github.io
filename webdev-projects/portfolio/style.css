@@ -48,6 +48,10 @@ body {
   border-radius: 4px;
 }
 
+.item a {
+  color: #f5f6f7;
+}
+
 .item1 {
   color: #f1f1f1;
   max-width: 25%;
