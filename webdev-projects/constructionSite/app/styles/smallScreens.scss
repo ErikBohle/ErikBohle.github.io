@@ -1,0 +1,486 @@
+$primaryColor: #101010;
+$secondaryColor: #ffffff;
+$buttonColor: #26aefd;
+$bgDark: #262728;
+$bgDarkTint: #474849;
+$bgLight: #f1f1f1;
+$fontPrimary: "Lato", sans-serif;
+$fontSecondary: "Roboto", sans-serif;
+
+//fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@500&display=swap");
+
+//reset
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  
+}
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+
+  box-sizing: border-box;
+  background-color: $bgDark;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+//todo
+
+.topHeader {
+  background-color: $bgDark;
+  color: $buttonColor;
+
+  text-align: center;
+  display: inline;
+  font-family: $fontPrimary;
+
+  .topHeaderInner {
+    a {
+      text-decoration: none;
+      color: $secondaryColor;
+      &:hover {
+        color: $buttonColor;
+      }
+      &:visited {
+        color: $bgLight;
+      }
+      &:active {
+        color: $bgLight;
+      }
+    }
+  }
+}
+
+.menu {
+  display: none;
+  z-index: 5;
+  background-color: $bgDark;
+  font-family: $fontPrimary;
+  .nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      //dropdown menu
+      .dropdown {
+        overflow: hidden;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px $bgDark;
+          z-index: 1;
+
+          a {
+            color: $primaryColor;
+            background-color: $secondaryColor;
+            text-decoration: none;
+            display: block;
+            padding: 1em 1em;
+            &:hover {
+              color: $buttonColor;
+            }
+          }
+        }
+        .dropbtn {
+          font-size: 1.5em;
+          border: none;
+          outline: none;
+          color: $secondaryColor;
+          background-color: inherit;
+          font-family: inherit;
+        }
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+
+      li {
+        white-space: nowrap;
+        a {
+          text-decoration: none;
+          color: $bgLight;
+          font-size: 1.5em;
+          letter-spacing: 0.06em;
+          &:hover {
+            color: $buttonColor;
+          }
+        }
+      }
+    }
+  }
+}
+.logo {
+  a {
+    outline: none;
+
+    img {
+      width: 75px;
+    }
+  }
+}
+
+#consult {
+  background-color: $buttonColor;
+  color: $secondaryColor;
+  border-radius: 50px;
+  padding: 0.7em;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0em;
+  &:hover {
+    color: $primaryColor;
+  }
+}
+//heropage slideshow
+.slideshow {
+  display: none;
+  top: 0;
+  position: relative;
+
+  img {
+    z-index: -1;
+    max-width: 100vw;
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+//javascript DOM classes
+.slides {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  transform: translateY(-4em);
+
+  width: 100%;
+
+  transition: all 0.5s ease;
+
+  background-color: $bgDark;
+}
+.scrolled {
+  transform: translate3d(0, -40px, 0);
+  transition: all 0.5s ease;
+}
+
+//main content
+.heroText {
+  font-size: 2em;
+  position: absolute;
+  width: auto;
+  left: 11em;
+  top: 5em;
+  text-align: center;
+  color: $secondaryColor;
+  display: none;
+
+  h1 {
+    width: 100%;
+    font-size: 2em;
+
+    border-radius: 50px;
+    padding: 5px;
+  }
+  p {
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+  }
+}
+.main {
+  display: grid;
+  text-align: center;
+  box-sizing: border-box;
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 80vh;
+  font-family: $fontPrimary;
+  grid-auto-flow: column;
+  grid-template-areas:
+    "commercial"
+    "siteManagement"
+    "industrial"
+    "governmental"
+    "testi1"
+    "testi2"
+    "testi3";
+}
+
+.commercial {
+  padding: 1em 0em;
+  padding-top: 0;
+  grid-area: commercial;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: $secondaryColor;
+  color: $bgDark;
+  height: 100%;
+  max-width: 100vw;
+  min-width: 100vw;
+  align-items: center;
+  .text {
+    margin: 0;
+    max-width: 80vw;
+    text-align: center;
+    a {
+      color: $bgDark;
+      &:hover {
+        color: $buttonColor;
+      }
+    }
+  }
+  .remove{
+    display: none;
+  }
+  img {
+    object-fit: cover;
+    max-width: 100vw;
+    
+  }
+}
+
+.siteManagement {
+  grid-area: siteManagement;
+  display: grid;
+  padding: 0;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "simg2 simg3"
+    "sh1 simg5"
+    "sp simg6";
+  background-color: $bgDark;
+  color: $secondaryColor;
+  .box {
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+    }
+  }
+  .box1 {
+    display: flex;
+    align-self: start;
+  }
+
+  .sh1 {
+    grid-area: sh1;
+    a {
+      color: $secondaryColor;
+      &:hover {
+        color: $buttonColor;
+      }
+    }
+  }
+  .sp {
+    grid-area: sp;
+  }
+  .simg1 {
+    display: none;
+  }
+  .simg2 {
+    grid-area: simg2;
+  }
+  .simg3 {
+    grid-area: simg3;
+  }
+  .simg4 {
+    grid-area: simg6;
+  }
+  .simg5 {
+    grid-area: simg5;
+  }
+  .simg6 {
+    display: none;
+  }
+}
+.industrial {
+  background-color: $secondaryColor;
+  color: $bgDark;
+  grid-area: industrial;
+  padding: 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-items: center;
+  .text {
+    min-width: 100%;
+    margin: 0;
+    padding: 2em 0em;
+    p{
+      
+    }
+    h2 {
+      a {
+        color: $bgDark;
+        &:visited {
+          color: $buttonColor;
+        }
+        &:hover{
+          color: red;
+        }
+      }
+    }
+  }
+  img {
+    min-width: 100%;
+  }
+}
+.governmental {
+  color: $secondaryColor;
+  width: 100%;
+  grid-area: governmental;
+
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding:1em;
+    margin: 1em;
+    
+    a {
+      color: $secondaryColor;
+      &:active {
+        color: red;
+      }
+    }
+    p {
+      width: 100%;
+      padding-top: 1em;
+    }
+  }
+}
+.testimonials1 {
+  grid-area: testi1;
+  background-color: $bgLight;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 50vh;
+  margin: 0;
+  p {
+    text-align: center;
+    left: 0;
+  }
+  img {
+    min-width: 100%;
+  }
+}
+.testimonials2 {
+  grid-area: testi2;
+  background-color: $bgLight;
+  display: flex;
+  flex-flow: column wrap;
+  min-height: 50vh;
+  p {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+.testimonials3 {
+  grid-area: testi3;
+  background-color: $bgLight;
+  display: flex;
+  flex-flow: column wrap;
+  padding-bottom: 1em;
+  min-height: 50vh;
+  margin: 0;
+  p {
+    text-align: center;
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+footer {
+  text-align: center;
+  background-color: $bgDark;
+  color: $secondaryColor;
+  padding: 0;
+  margin: 1em;
+  a {
+    text-decoration: none;
+    color: $buttonColor;
+    font-size: 1em;
+  }
+}
+
+.mainContact {
+  display: grid;
+  height: 100vh;
+  background-color: $bgDark;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "map"
+    "form";
+  .map {
+    grid-area: map;
+    img {
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+  .contact {
+    grid-area: form;
+
+    text-align: center;
+    margin-top: 0;
+    form {
+      display: block;
+      .info {
+        color: $secondaryColor;
+
+        input {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          background-color: $buttonColor;
+          border: none;
+          border-radius: 50px;
+          padding: 0.2em;
+          margin-bottom: 1em;
+        }
+      }
+      .submit {
+        input {
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          background-color: $buttonColor;
+          border: none;
+          border-radius: 50px;
+          padding: 0.2em;
+          margin-bottom: 1em;
+        }
+      }
+    }
+  }
+}

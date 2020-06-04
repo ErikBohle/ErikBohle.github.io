@@ -1,0 +1,243 @@
+
+
+
+$primaryColor: #101010;
+$secondaryColor: #ffffff;
+$buttonColor: #26aefd;
+$bgDark: #262728;
+$bgDarkTint: #474849;
+$bgLight: #f1f1f1;
+$fontPrimary: "Lato", sans-serif;
+$fontSecondary: "Roboto", sans-serif;
+
+//fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400&family=Roboto:wght@500&display=swap");
+
+//reset
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  font: inherit;
+
+  box-sizing: border-box;
+  background-color: $bgDark;
+  overflow-x: hidden;
+}
+ol,
+ul {
+  list-style: none;
+}
+
+//todo
+
+.topHeader {
+  background-color: $bgDarkTint;
+  color: $buttonColor;
+  width: 100%;
+  padding: 1.4em;
+  text-align: center;
+  display: block;
+  font-family: $fontPrimary;
+
+  .topHeaderInner {
+    a {
+      text-decoration: none;
+      color: $secondaryColor;
+      &:hover {
+        color: $buttonColor;
+      }
+      &:visited {
+        color: $bgLight;
+      }
+      &:active {
+        color: $bgLight;
+      }
+    }
+  }
+}
+
+.menu {
+  z-index: 5;
+  background-color: $bgDark;
+  font-family: $fontPrimary;
+  .nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 1em;
+      //dropdown menu
+      .dropdown {
+        overflow: hidden;
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px $bgDark;
+          z-index: 1;
+
+          a {
+            color: $primaryColor;
+            background-color: $secondaryColor;
+            text-decoration: none;
+            display: block;
+            padding: 1em 1em;
+            &:hover {
+              color: $buttonColor;
+            }
+          }
+        }
+        .dropbtn {
+          font-size: 1.5em;
+          border: none;
+          outline: none;
+          color: $secondaryColor;
+          background-color: inherit;
+          font-family: inherit;
+        }
+        &:hover {
+          .dropdown-content {
+            display: block;
+          }
+        }
+      }
+
+      li {
+        white-space: nowrap;
+        a {
+          text-decoration: none;
+          color: $bgLight;
+          font-size: 1.5em;
+          letter-spacing: 0.06em;
+          &:hover {
+            color: $buttonColor;
+          }
+        }
+      }
+    }
+  }
+}
+.logo {
+  a {
+    outline: none;
+
+    img {
+      width: 75px;
+    }
+  }
+}
+#consult {
+  background-color: $buttonColor;
+  color: $secondaryColor;
+  border-radius: 50px;
+  padding: 0.7em;
+  font-family: Arial, Helvetica;
+  letter-spacing: 0em;
+  &:hover {
+    color: $primaryColor;
+  }
+}
+//heropage slideshow
+.slideshow {
+  top: 0;
+  position: relative;
+
+  img {
+    z-index: -1;
+    max-width: 100vw;
+    width: 100%;
+    height: 90vh;
+  }
+}
+
+//javascript DOM classes
+.slides {
+  display: none;
+}
+.sticky {
+  position: fixed;
+  transform: translateY(-4em);
+  width: 100%;
+  transition: all 0.5s ease;
+  background-color: $bgDark;
+}
+.scrolled {
+  transform: translate3d(0, -40px, 0);
+  transition: all 0.5s ease;
+}
+
+//main content
+.mainContact{
+  display: grid;
+  height: 100vh;
+  background-color: $bgDark;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "map form";
+  .map{
+    grid-area: map;
+    img{
+      object-fit: cover;
+      max-width: 70vw;
+    }
+  }
+  .contact{
+    grid-area: form;
+    
+    text-align: center;
+    margin-top: 2em;
+    form{
+      
+      display: block;
+      .info{
+        color: $secondaryColor;
+        
+        
+        input{
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          background-color: $buttonColor;
+          border: none;
+          border-radius: 50px;
+          padding: 0.2em;
+          margin-bottom: 1em;
+        }
+      }
+      .submit{
+        input{
+          display: block;
+          text-align: center;
+          margin: 0 auto;
+          background-color: $buttonColor;
+          border: none;
+          border-radius: 50px;
+          padding: 0.2em;
+          margin-bottom: 1em;
+        }
+        
+      }
+    }
+  }
+}
+
+
+
+footer {
+  text-align: center;
+  background-color: $bgDark;
+  color: $secondaryColor;
+  padding: 0 1em;
+  a {
+    text-decoration: none;
+    color: $secondaryColor;
+    font-size: 2em;
+  }
+}

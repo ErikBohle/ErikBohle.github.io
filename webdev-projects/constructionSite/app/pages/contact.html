@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Construction site</title>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/constructionSite/app/styles/contactStyle.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="/constructionSite/app/styles/smallScreens.css"
+    />
+  </head>
+  <!-- 
+  single page
+-dropdown nav : services - governmental, industry,commercial.
+  -nav:
+  connect navs to career+contact site with a select of reason to contact.
+  connect consultation to email
+  -another nav for mobile etc - hamburger?
+
+
+ -->
+  <body>
+    <a name="top"></a>
+    <header>
+      <div id="topHead" class="topHeader">
+        <div class="topHeaderInner">
+          For all your contracting needs,
+          <a href="app/pages/contact.html">&nbsp Schedule A Call &nbsp</a> with our certified
+          advisors.
+        </div>
+      </div>
+      <div id="navbar" class="menu">
+        <div class="nav">
+          <ul>
+            <li class="logo">
+              <a href="#top">
+                <img
+                  src="/constructionSite/app/images/c7f8781e-6fb4-4b34-aa5d-b72820275256_200x200.png"
+                  href="#top"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="item"><a href="/constructionSite/index.html">Home</a></li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Services
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/constructionSite/index.html#governmental">Governmental</a>
+                <a href="/constructionSite/index.html#industrial">Industrial</a>
+                <a href="/constructionSite/index.html#sitemanagement">Site Management</a>
+                <a href="/constructionSite/index.html#commercial">Commercial</a>
+              </div>
+            </div>
+            <li class="item">
+              <a href="/constructionSite/index.html#testimonials">Testimonials</a>
+            </li>
+            <li class="item"><a href="contact.html">Contact</a></li>
+            <li class="item">
+              <a id="consult" href="contact.html"> FREE CONSULTATION</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </header>
+    <div class="mainContact">
+      <div class="map"><img src="/constructionSite/app/images/map.png" alt="" /></div>
+      <div class="contact">
+        <form action="#">
+          <div class="info">
+            <label for="fname">First and Last name</label>
+            <input id="fname" placeholder="Enter your name here" name="fname" type="text" />
+
+            <label for="number">Phone number</label>
+            <input id="number" placeholder="Enter your number here" name="number" type="text" />
+
+            <label for="email">Email</label>
+            <input id="email" placeholder="Enter your email here" name="email" type="email" />
+          </div>
+          <div class="submit">
+            <label for="question"></label>
+            <textarea
+              name="question"
+              cols="18"
+              rows="8"
+              placeholder="Enter your questions here"
+              id="question"
+              type="text"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/constructionSite/app/scripts/app.js"></script>
+
+    <footer>
+      <h3>WE BUILD WHAT MATTERS</h3>
+      <p>
+        &copy; Generic construction company | 555-555-555 | fakemail@online.com |<a
+          href="https://erikbohle.com"
+        >
+          www.erikbohle.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
