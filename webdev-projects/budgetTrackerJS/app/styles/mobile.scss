@@ -1,0 +1,91 @@
+// Mobile styles
+//small
+@media (max-width: 640px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  #portfolio{
+    margin-top: 5em;
+  }
+  .controls {
+    width: 100vw;
+    h1 {
+      font-size: 5ch;
+    }
+    div {
+      margin: 1em;
+      width: 34vw;
+      border: none;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+    .total {
+      width: 100vw;
+      font-size: 10px;
+    }
+  }
+  .allinputs {
+    width: 100vw;
+    div {
+      width: 100%;
+      
+      p {
+        width: 40vw;
+      }
+    }
+  }
+}
+//pads 
+@media (min-width:700px) and ( max-width: 900px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .controls {
+    width: 100vw;
+    height: 30vh;
+    h1 {
+      font-size: 10ch;
+    }
+    div {
+      margin: 1em;
+      width: 34vw;
+      border: none;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+    .total {
+      width: 100vw;
+      font-size: 10px;
+    }
+  }
+  .allinputs {
+    width: 100vw;
+    div {
+      width: 100%;
+      
+      p {
+        width: 40vw;
+      }
+    }
+  }
+}
