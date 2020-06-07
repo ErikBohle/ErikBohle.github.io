@@ -71,15 +71,16 @@ aside {
 .controls {
   display: flex;
   justify-content: center;
-  height: 40vh;
+  height: 15em;
   font-size: 20px;
   margin-bottom: 1em;
   background-color: $grayColor;
   h1 {
     position: absolute;
-    font-size: 14ch;
+    font-size: 10ch;
     font-family: Arial, $fonts;
     margin-top: 0.5ch;
+    z-index: -1;
   }
   #portfolio{
     color: $primaryColor;
@@ -95,8 +96,9 @@ aside {
   display: flex;
   border: 1px black solid;
   border-radius: 2px;
-
+  z-index: 1;
   input {
+    
     background-color: $bgBlue;
     border: 1px solid $primaryColor;
     padding: 8px 10px;
@@ -110,6 +112,7 @@ aside {
   align-self: flex-end;
   border: 1px black solid;
   border-radius: 2px;
+  z-index: 1;
   input {
     border: 1px solid $primaryColor;
     padding: 8px 10px;

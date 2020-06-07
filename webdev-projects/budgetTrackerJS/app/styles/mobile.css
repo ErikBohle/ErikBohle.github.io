@@ -54,10 +54,11 @@
   }
   .controls {
     width: 100vw;
-    height: 30vh;
+    height: 40vh;
   }
   .controls h1 {
-    font-size: 10ch;
+    bottom: 0;
+    font-size: 50ch;
   }
   .controls div {
     margin: 1em;

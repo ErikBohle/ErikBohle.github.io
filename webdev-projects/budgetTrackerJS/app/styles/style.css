@@ -63,7 +63,7 @@ aside h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 40vh;
+  height: 15em;
   font-size: 20px;
   margin-bottom: 1em;
   background-color: #c0c0c0;
@@ -71,9 +71,10 @@ aside h1 {
 
 .controls h1 {
   position: absolute;
-  font-size: 14ch;
+  font-size: 10ch;
   font-family: Arial, "Roboto", Arial, Courier;
   margin-top: 0.5ch;
+  z-index: -1;
 }
 
 .controls #portfolio {
@@ -91,6 +92,7 @@ aside h1 {
   display: flex;
   border: 1px black solid;
   border-radius: 2px;
+  z-index: 1;
 }
 
 .add input {
@@ -110,6 +112,7 @@ aside h1 {
       align-self: flex-end;
   border: 1px black solid;
   border-radius: 2px;
+  z-index: 1;
 }
 
 .subtract input {
