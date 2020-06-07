@@ -102,7 +102,7 @@ deleteBtn = function () {
       for (var i = 0; i < myarray.length; i++) {
         if (myarray[i] == removedNumber) {
           myarray.splice(i, 1);
-          arrayOfNumbers = myarray.map(Number);
+          arrayOfNumbers = parseInt(myarray.map(Number));
           $(".allinputs").empty();
           addToArrayAndTotal();
           appendAndSort();
