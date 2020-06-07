@@ -1,0 +1,303 @@
+// Mobile styles start at line 206
+
+//normalize and resets
+html {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+//fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+$fonts: "Roboto", Arial, Courier;
+//colors
+
+$grayColor: #c0c0c0;
+$primaryColor: #000;
+$secondaryColor: #fff;
+$bgBlue: #385c75;
+$bgBlueTwo: #99b4cc;
+$bgWhite: #f0f0f0;
+$bgRed: #ff5f57;
+$bgRedTwo: #ff9e99;
+
+//
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+
+  opacity: 1;
+}
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+
+  opacity: 1;
+}
+
+//removing arrows on number input
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100%;
+  background-color: $bgBlueTwo;
+}
+aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18%;
+  background-color: $secondaryColor;
+  height: auto;
+  li {
+    padding: 1em;
+    font-size: 3ch;
+  }
+  h1 {
+    padding: 1em;
+  }
+}
+//top talf
+.controls {
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+  font-size: 20px;
+  margin-bottom: 1em;
+  background-color: $grayColor;
+  h1 {
+    position: absolute;
+    font-size: 14ch;
+    font-family: Arial, $fonts;
+    margin-top: 0.5ch;
+  }
+  #portfolio{
+    color: $primaryColor;
+    text-decoration: none;
+    position: absolute;
+    
+  }
+}
+//inputs
+.add {
+  align-self: flex-end;
+  margin: 1em 2em;
+  display: flex;
+  border: 1px black solid;
+  border-radius: 2px;
+
+  input {
+    background-color: $bgBlue;
+    border: 1px solid $primaryColor;
+    padding: 8px 10px;
+    color: $secondaryColor;
+    font-family: $fonts;
+  }
+}
+.subtract {
+  display: flex;
+  margin: 1em 2em;
+  align-self: flex-end;
+  border: 1px black solid;
+  border-radius: 2px;
+  input {
+    border: 1px solid $primaryColor;
+    padding: 8px 10px;
+    background-color: $bgRed;
+    color: $primaryColor;
+    font-family: $fonts;
+    &:active {
+      outline: none;
+    }
+  }
+}
+// buttons
+.btnAdd {
+  padding: 8px 10px;
+  background-color: $bgBlueTwo;
+
+  border: 1px solid $primaryColor;
+  cursor: pointer;
+}
+.btnSubtract {
+  border: 1px solid $primaryColor;
+  cursor: pointer;
+  padding: 8px 10px;
+  background-color: $bgRedTwo;
+}
+
+
+
+//bottom half
+
+.results {
+  display: flex;
+  color: $secondaryColor;
+  background-color: $bgBlueTwo;
+  height: 100%;
+  flex-direction: column;
+}
+hr {
+  margin: 0;
+}
+.total {
+  background-color: $bgBlue;
+  padding: 0.5em;
+  height: 10vh;
+  width: 37.5vw;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+  align-self: center;
+  h2 {
+    align-self: center;
+    margin-right: 10px;
+    font-size: 5ch;
+    letter-spacing: 2px;
+  }
+  span {
+    align-self: center;
+    color: $bgWhite;
+    font-size: 5ch;
+  }
+}
+
+.allinputs {
+  align-self: center;
+  width: 40vw;
+  background-color: black;
+  border: 5px solid $primaryColor;
+  height: auto;
+
+  div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+
+    button {
+      border: none;
+      position: absolute;
+      padding: 1em;
+      right: 0;
+    }
+    p {
+      margin: 1px;
+      padding: 1em;
+      width: auto;
+    }
+  }
+}
+
+.bgRed {
+  background-color: $bgRed;
+  color: $primaryColor;
+}
+
+.bgBlue {
+  background-color: $bgBlue;
+  color: $secondaryColor;
+}
+
+// Mobile styles
+//small
+@media (max-width: 640px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  #portfolio{
+    margin-top: 5em;
+  }
+  .controls {
+    width: 100vw;
+    h1 {
+      font-size: 5ch;
+    }
+    div {
+      margin: 1em;
+      width: 34vw;
+      border: none;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+    .total {
+      width: 100vw;
+      font-size: 10px;
+    }
+  }
+  .allinputs {
+    width: 100vw;
+    div {
+      width: 100%;
+      button{}
+      p {
+        width: 40vw;
+      }
+    }
+  }
+}
+//pads 
+@media (min-width:700px) and ( max-width: 900px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .controls {
+    width: 100vw;
+    height: 30vh;
+    h1 {
+      font-size: 10ch;
+    }
+    div {
+      margin: 1em;
+      width: 34vw;
+      border: none;
+      input {
+        width: 100%;
+      }
+    }
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+    .total {
+      width: 100vw;
+      font-size: 10px;
+    }
+  }
+  .allinputs {
+    width: 100vw;
+    div {
+      width: 100%;
+      button{}
+      p {
+        width: 40vw;
+      }
+    }
+  }
+}

@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  opacity: 1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+body {
+  width: 100%;
+  background-color: #99b4cc;
+}
+
+aside {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 18%;
+  background-color: #fff;
+  height: auto;
+}
+
+aside li {
+  padding: 1em;
+  font-size: 3ch;
+}
+
+aside h1 {
+  padding: 1em;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40vh;
+  font-size: 20px;
+  margin-bottom: 1em;
+  background-color: #c0c0c0;
+}
+
+.controls h1 {
+  position: absolute;
+  font-size: 14ch;
+  font-family: Arial, "Roboto", Arial, Courier;
+  margin-top: 0.5ch;
+}
+
+.controls #portfolio {
+  color: #000;
+  text-decoration: none;
+  position: absolute;
+}
+
+.add {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px black solid;
+  border-radius: 2px;
+}
+
+.add input {
+  background-color: #385c75;
+  border: 1px solid #000;
+  padding: 8px 10px;
+  color: #fff;
+  font-family: "Roboto", Arial, Courier;
+}
+
+.subtract {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1em 2em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: 1px black solid;
+  border-radius: 2px;
+}
+
+.subtract input {
+  border: 1px solid #000;
+  padding: 8px 10px;
+  background-color: #ff5f57;
+  color: #000;
+  font-family: "Roboto", Arial, Courier;
+}
+
+.subtract input:active {
+  outline: none;
+}
+
+.btnAdd {
+  padding: 8px 10px;
+  background-color: #99b4cc;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.btnSubtract {
+  border: 1px solid #000;
+  cursor: pointer;
+  padding: 8px 10px;
+  background-color: #ff9e99;
+}
+
+.results {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  background-color: #99b4cc;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+hr {
+  margin: 0;
+}
+
+.total {
+  background-color: #385c75;
+  padding: 0.5em;
+  height: 10vh;
+  width: 37.5vw;
+  margin: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 25px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.total h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-right: 10px;
+  font-size: 5ch;
+  letter-spacing: 2px;
+}
+
+.total span {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #f0f0f0;
+  font-size: 5ch;
+}
+
+.allinputs {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 40vw;
+  background-color: black;
+  border: 5px solid #000;
+  height: auto;
+}
+
+.allinputs div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.allinputs div button {
+  border: none;
+  position: absolute;
+  padding: 1em;
+  right: 0;
+}
+
+.allinputs div p {
+  margin: 1px;
+  padding: 1em;
+  width: auto;
+}
+
+.bgRed {
+  background-color: #ff5f57;
+  color: #000;
+}
+
+.bgBlue {
+  background-color: #385c75;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  #portfolio {
+    margin-top: 5em;
+  }
+  .controls {
+    width: 100vw;
+  }
+  .controls h1 {
+    font-size: 5ch;
+  }
+  .controls div {
+    margin: 1em;
+    width: 34vw;
+    border: none;
+  }
+  .controls div input {
+    width: 100%;
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+  }
+  .results .total {
+    width: 100vw;
+    font-size: 10px;
+  }
+  .allinputs {
+    width: 100vw;
+  }
+  .allinputs div {
+    width: 100%;
+  }
+  .allinputs div p {
+    width: 40vw;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+  aside {
+    display: none;
+  }
+  html {
+    border: none;
+    max-width: 100%;
+    font-size: 10px;
+  }
+  .controls {
+    width: 100vw;
+    height: 30vh;
+  }
+  .controls h1 {
+    font-size: 10ch;
+  }
+  .controls div {
+    margin: 1em;
+    width: 34vw;
+    border: none;
+  }
+  .controls div input {
+    width: 100%;
+  }
+  .results {
+    width: 100vw;
+    font-size: 18px;
+  }
+  .results .total {
+    width: 100vw;
+    font-size: 10px;
+  }
+  .allinputs {
+    width: 100vw;
+  }
+  .allinputs div {
+    width: 100%;
+  }
+  .allinputs div p {
+    width: 40vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

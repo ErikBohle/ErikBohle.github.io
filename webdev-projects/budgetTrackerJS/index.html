@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Budget Tracker</title>
+  <!-- normalize -->
+  <link rel="stylesheet" href="/ErikBohle.github.io/webdev-projects/styles/normalize.css">
+  <link rel="stylesheet" href="app/styles/style.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+</head>
+
+<!-- 
+  Todo:
+ see app.js
+-->
+<body>
+  <aside>
+    
+    <h1>Enter some numbers and submit with the buttons to use</h1>
+    <hr>
+    <li>Thoughts and things to improve:</li>
+    <hr>
+    <li>I chose to use two input fields instead of one, so i can show the use of form validation. Even though a single field would be easier to make</li>
+    <hr>
+    <li>No unit testing have been done.</li>
+    <hr>
+
+  </aside>
+  <div class="controls">
+    <p><a id="portfolio" href="https://www.erikbohle.com">www.erikbohle.com | Portfolio website</a></p>
+    <h1>Budget Tracker</h1>
+    
+    <div class="subtract">
+      <input placeholder="Enter a number" id="subtract" type="number" name="" pattern="[0-9]+"  ><button  type="submit" id="btnSubtract"><i  class="fas fa-minus"></i></button>
+    </div>    
+    <div class="add">
+      <input placeholder="Enter a number" id="add" type="number" name="" value="0"><button type="submit" id="btnAdd"><i class="fas fa-plus"></i></button>
+    </div>
+  </div>
+
+  <div class="results">
+    <div id="total" class="total">
+      <h2>Your balance is:</h2><span id="totalText">0</span>
+    </div>
+    <div class="allinputs">
+
+    </div>
+  </div>
+  <script
+			  src="https://code.jquery.com/jquery-3.5.1.js"
+			  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			  crossorigin="anonymous"></script>
+  <script src="app/scripts/app.js"></script>
+</body>
+</html>
