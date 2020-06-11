@@ -1,0 +1,269 @@
+
+//variables
+$primaryColor: #002b5a;
+$tinteFont: rgb(120, 120, 120);
+$background: #fff;
+$bg-gray: #efefef;
+$secondaryColor: #8e4585;
+$BaseColor: #212529;
+
+//mixins
+@mixin logo {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+@mixin ModButton {
+  background-color: inherit;
+  border: none;
+  color: $BaseColor;
+  font-size: 0.7em;
+}
+
+@mixin content{
+  max-width: 60rem;
+  width: 95%;
+  margin-bottom: .5rem;
+  padding: 2.2rem 1.5rem 1.2rem;
+}
+
+@mixin paraDesc{
+  height: 5rem;
+  font-size: 12px;
+  color: $tinteFont;
+  margin-bottom: 0;
+}
+
+.banner {
+  position: relative;
+  .title {
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    color: $background;
+    top: 80px;
+    h1 {
+      text-align: center;
+      font-size: 5rem;
+      color: $background;
+    }
+  }
+  .social {
+    display: block;
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+    color: $background;
+    span{
+      margin-right: 10px;
+      font-size: 2em;
+    }
+    .twitter{
+      background-image: url(/BootstrapShowcase/app/images/Twitter_Logo_WhiteOnBlue.png);
+      @include logo();
+      }
+    .instagram{
+      background-image: url(/BootstrapShowcase/app/images/glyph-logo_May2016.png);
+      @include logo();
+    }
+    .email{
+      background-image: url(/BootstrapShowcase/app/images/hiclipart.com.png);
+      @include logo();
+    }
+    .facebook{
+      background-image: url(/BootstrapShowcase/app/images/badgeRGB-black.png);
+      @include logo();
+    }
+    }
+  
+  .image {
+    background-image: url(/BootstrapShowcase/app/images/harshal-s-hirve-516rZwqZ_-I-unsplash.png);
+    height: 25rem;
+    background-position: center top;
+    background-size: cover;
+  }
+}
+h1{
+  color:$secondaryColor;
+  margin-bottom: 0.5em;
+}
+
+h4{
+  font-size: 0.9em;
+  color: $secondaryColor;
+  font-weight: 500;
+}
+
+.headline{
+  p{
+    margin-bottom: 1em;
+  }
+}
+
+.searchbox{
+  width: 17rem;
+  background-color: $bg-gray;
+  padding: 1em;
+  h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  p{
+    font-size: 13px;
+  }
+}
+
+.container{
+  @include content();
+  
+}
+.menu {
+  background-color: $bg-gray;
+  .item{
+    margin-bottom: 2rem;
+    h3{
+      font-size: 1.5em;
+    }
+    p{
+      @include paraDesc();
+    }
+  }
+  .button{
+    background-color: $background;
+    width:8.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+    padding: .5rem .8rem;
+    
+    
+    a{
+      
+      margin-right: 5px;
+      &:hover{color: $secondaryColor; text-decoration: underline;}
+    }
+   
+
+  }
+}
+
+.carousel-item{
+  max-height: 30rem;
+  
+  h3{
+    color: $secondaryColor;
+  }
+  img{
+    
+    max-width:100%;
+max-height:100%;
+
+  }
+}
+
+.products{
+  
+  background-color: $bg-gray;
+  padding: 2.2rem 1.5rem 1.2rem;
+  p{
+    height: 3rem;
+  }
+  h1{
+    margin-bottom: 42px;
+  }
+}
+
+.filter{
+  span{
+  margin-left: auto;}
+
+}
+.product-column{
+  width: 25%;
+  padding: 0 16px;
+  
+}
+.product{
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  background-color: $background;
+  padding: 16px;
+  margin: 0;
+  h3{
+    font-size: 1.1em;
+    font-weight: 700;
+  }
+
+  p{
+    font-size: 0.7em;
+  }
+  .image{
+    
+    height:8rem;
+    img{
+    
+    max-width:100%;
+    max-height:100%;}
+  }
+}
+
+.link{
+  font-weight: 400;
+  opacity: 0.7;
+  button{
+    @include ModButton();
+    &:hover{
+      background-color: $secondaryColor;
+    }
+    &:active{
+      @include ModButton();
+    }
+
+    &:focus{
+      @include ModButton();
+    }
+    
+  }
+  i{
+    margin-left: 8px;
+  }
+}
+.modal-dialog{
+  max-width: 50vw;
+  margin: 1.75rem auto;
+}
+.modal-content{
+  width: 50vw;
+  p{
+    @include paraDesc();
+    font-size: 1em;
+    
+  }
+  img{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  button{
+    @include ModButton();
+    &:hover{
+      background-color: $secondaryColor;
+    }
+    &:active{
+      @include ModButton();
+    }
+
+    &:focus{
+      @include ModButton();
+    }
+    
+  }
+}
+.modal-header{
+  display: block;
+}
+
+footer{
+  text-align: center;
+}

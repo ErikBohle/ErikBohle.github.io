@@ -1,0 +1,305 @@
+.banner {
+  position: relative;
+}
+
+.banner .title {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  color: #fff;
+  top: 80px;
+}
+
+.banner .title h1 {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+}
+
+.banner .social {
+  display: block;
+  position: absolute;
+  bottom: 5%;
+  right: 1%;
+  color: #fff;
+}
+
+.banner .social span {
+  margin-right: 10px;
+  font-size: 2em;
+}
+
+.banner .social .twitter {
+  background-image: url(/BootstrapShowcase/app/images/Twitter_Logo_WhiteOnBlue.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+.banner .social .instagram {
+  background-image: url(/BootstrapShowcase/app/images/glyph-logo_May2016.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+.banner .social .email {
+  background-image: url(/BootstrapShowcase/app/images/hiclipart.com.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+.banner .social .facebook {
+  background-image: url(/BootstrapShowcase/app/images/badgeRGB-black.png);
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 3px;
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  opacity: .8;
+}
+
+.banner .image {
+  background-image: url(/BootstrapShowcase/app/images/harshal-s-hirve-516rZwqZ_-I-unsplash.png);
+  height: 25rem;
+  background-position: center top;
+  background-size: cover;
+}
+
+h1 {
+  color: #8e4585;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 0.9em;
+  color: #8e4585;
+  font-weight: 500;
+}
+
+.headline p {
+  margin-bottom: 1em;
+}
+
+.searchbox {
+  width: 17rem;
+  background-color: #efefef;
+  padding: 1em;
+}
+
+.searchbox h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.searchbox p {
+  font-size: 13px;
+}
+
+.container {
+  max-width: 60rem;
+  width: 95%;
+  margin-bottom: .5rem;
+  padding: 2.2rem 1.5rem 1.2rem;
+}
+
+.menu {
+  background-color: #efefef;
+}
+
+.menu .item {
+  margin-bottom: 2rem;
+}
+
+.menu .item h3 {
+  font-size: 1.5em;
+}
+
+.menu .item p {
+  height: 5rem;
+  font-size: 12px;
+  color: #787878;
+  margin-bottom: 0;
+}
+
+.menu .button {
+  background-color: #fff;
+  width: 8.5rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 2px #fff inset;
+  padding: .5rem .8rem;
+}
+
+.menu .button a {
+  margin-right: 5px;
+}
+
+.menu .button a:hover {
+  color: #8e4585;
+  text-decoration: underline;
+}
+
+.carousel-item {
+  max-height: 30rem;
+}
+
+.carousel-item h3 {
+  color: #8e4585;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.products {
+  background-color: #efefef;
+  padding: 2.2rem 1.5rem 1.2rem;
+}
+
+.products p {
+  height: 3rem;
+}
+
+.products h1 {
+  margin-bottom: 42px;
+}
+
+.filter span {
+  margin-left: auto;
+}
+
+.product-column {
+  width: 25%;
+  padding: 0 16px;
+}
+
+.product {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  padding: 16px;
+  margin: 0;
+}
+
+.product h3 {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.product p {
+  font-size: 0.7em;
+}
+
+.product .image {
+  height: 8rem;
+}
+
+.product .image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.link {
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.link button {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.link button:hover {
+  background-color: #8e4585;
+}
+
+.link button:active {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.link button:focus {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.link i {
+  margin-left: 8px;
+}
+
+.modal-dialog {
+  max-width: 50vw;
+  margin: 1.75rem auto;
+}
+
+.modal-content {
+  width: 50vw;
+}
+
+.modal-content p {
+  height: 5rem;
+  font-size: 12px;
+  color: #787878;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal-content button {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.modal-content button:hover {
+  background-color: #8e4585;
+}
+
+.modal-content button:active {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.modal-content button:focus {
+  background-color: inherit;
+  border: none;
+  color: #212529;
+  font-size: 0.7em;
+}
+
+.modal-header {
+  display: block;
+}
+
+footer {
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

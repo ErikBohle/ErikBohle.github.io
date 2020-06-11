@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do you crave plums?</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+    <!-- normalize -->
+    <link rel="stylesheet" href="/ErikBohle.github.io/webdev-projects/styles/normalize.css" />
+    <!-- bootstrap -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <!-- styles -->
+    <link rel="stylesheet" href="app/styles/style.css" />
+    <!-- scripts -->
+    
+  </head>
+  <!-- Todo:
+  filter products
+  use the data values and if/else+ for loop?
+  -->
+  <body>
+    <!-- Top banner/header -->
+    <div class="banner">
+      <div class="title">
+        <h1>
+          Craving Plums?
+        </h1>
+      </div>
+      <div class="social">
+        <span>Social:</span>
+        <a class="facebook" href=""></a>
+        <a class="twitter" href=""></a>
+        <a class="instagram" href=""></a>
+        <a class="email" href=""></a>
+      </div>
+      <div class="image"></div>
+    </div>
+    <!-- hero with search -->
+    <div class="headline container">
+      <div class="row">
+        <div class="col-md-8 col-sm-12">
+          <h1>Do you have cravings?</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit, laboriosam!
+          </p>
+          <p>
+            Discover the latest interactive trend in forward-thinking cuisine that's disrupting the
+            mouth market. This transformative rock star of the food scene is revolutionizing how
+            people engage with the cutting edge of their teeth. By combining leading mouth-feel
+            qualities and groundbreaking flavors, plums have exponentially pivoted to become the
+            Uber unicorn for fruit.
+          </p>
+        </div>
+        <div class="col-md-4 col-sm-12">
+          <div class="searchbox">
+            <h2>Plum finder</h2>
+            <p>Satisfy your craving by finding local plums</p>
+            <div class="searchbar">
+              <div class="awesomeplete">
+                <input
+                  class="awesomplete"
+                  data-list="Viken, Innlandet, Vestfold og Telemark, Rogaland, Vestland, Møre og Romsdal, Trønderlag, Nordland, Troms og Finnmark, Oslo"
+                />
+                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- image carousel -->
+    <div class="carousel container">
+      <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselId" data-slide-to="1"></li>
+          <li data-target="#carouselId" data-slide-to="2"></li>
+          <li data-target="#carouselId" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner container" role="listbox">
+          <div class="carousel-item active">
+            <img
+              src="app/images/alejandro-duarte-_0F8JegdYwQ-unsplash.jpg"
+              data-src="holder.js/900x500/auto/#777:#555/text:First slide"
+              alt="First slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Plums</h3>
+              <p>It's what you want</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="app/images/yulia-khlebnikova-CRG7Pfdgst8-unsplash.jpg"
+              data-src="holder.js/900x500/auto/#666:#444/text:Second slide"
+              alt="Second slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Plums</h3>
+              <p>It's what you need</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="app/images/monika-grabkowska-ajDjI1j0Rqs-unsplash.jpg"
+              data-src="holder.js/900x500/auto/#666:#444/text:Third slide"
+              alt="Third slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Plums</h3>
+              <p>It's all in the details</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="app/images/monika-grabkowska-VdwTi6mw5WU-unsplash.jpg"
+              data-src="holder.js/900x500/auto/#666:#444/text:Fourth slide"
+              alt="Fourth slide"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Plums</h3>
+              <p>When life gives you them, rejoice</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    <!-- info links -->
+    <div class="menu container">
+      <h1>Why Eat plums?</h1>
+      <div class="row">
+        <div class="item col-md-4">
+          <h3>Scrumptious</h3>
+          <p>
+            With a combination of simple and complex carbohydrate molecules, plums remain undefeated
+            in the flavor wars of the 21st century.
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <h3>Progress</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, eos!
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <h3>New Age</h3>
+          <p>
+            How should you navigate this self-aware nexus? It can be difficult to know where to
+            begin. The totality is calling to you via morphogenetic fields. Can you hear it?
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="item col-md-4">
+          <h3>Cloud</h3>
+          <p>
+            Looking forward to 2014, the cloud will be key to our ability to aggregate the synergy
+            strategically.
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <h3>Yearning</h3>
+          <p>
+            We can no longer afford to live with yearning. Without plums, one cannot exist. You may
+            be ruled by desire without realizing it. Do not let it disrupt the richness of your
+            quest.
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+        <div class="item col-md-4">
+          <h3>Industry Leader</h3>
+          <p>
+            Think mega-end-to-end. It's realistic! Cutting-edge, seamless feature set is unmatched
+            in the industry, but our real-world e-commerce and easy use is constantly considered a
+            terrific achievement.
+          </p>
+          <div class="button">
+            <a href="">Learn more</a>
+            <i class="fas fa-arrow-right"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  product info -->
+    <div class="products container">
+      <div class="row">
+        <div class="col-md-8">
+          <h1>Products</h1>
+        </div>
+        <div class="col-md-4 filter">
+          <span>Filter by</span>
+          <select class="p-select">
+            <option class="filter_link" value="all">All</option>
+            <option class="filter_link" value="0-20">Less than 20</option>
+            <option class="filter_link" value="20-40">From 20 to 40</option>
+            <option class="filter_link" value="40-60">From 40 to 60</option>
+            <option class="filter_link" value="60-100">From 60 to 100</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <!-- modal 1 -->
+        <div class="col-md3  product-column">
+          <div class="product" data-product="1" data-price="20">
+            <h3>Not a Plum</h3>
+            <h4>Starting at 20kr/kg</h4>
+            <p>For all your other needs</p>
+            <div class="image"><img src="app/images/mockup-graphics-Kl3467edwsE-unsplash.jpg"></div>
+            <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId1">
+              Learn more
+              <i class="fas fa-arrow-right"></i></div></button>
+          </div>
+        </div>
+        <!-- modal 2 -->
+        <div class="col-md3  product-column">
+          <div class="product" data-product="2" data-price="80">
+            <h3>Edible Plums</h3>
+            <h4>Starting at 80kr/kg</h4>
+            <p>The most edible of plums</p>
+            <div class="image"><img src="app/images/mockup-graphics-2BeAHd_Kmf8-unsplash.jpg"></div>
+            <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId2">
+              Learn more<i class="fas fa-arrow-right"></i>
+            </button></div>
+          </div>
+        </div>
+        <!-- modal 3 -->
+        <div class="col-md3  product-column">
+          <div class="product" data-product="3" data-price="25">
+            <h3>Plump Plums</h3>
+            <h4>Starting at 25kr/kg</h4>
+            <p>The plumpest plums.</p>
+            <div class="image"><img src="app/images/rebecca-matthews-6pagvvy09eI-unsplash.jpg"></div>
+            <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId3">
+              Learn more <i class="fas fa-arrow-right"></i>
+            </button></div>
+          </div>
+        </div>
+        <!-- modal 4 -->
+        <div class="col-md3  product-column">
+          <div class="product" data-product="4" data-price="45">
+            <h3>Liquid Plums</h3>
+            <h4>Starting at 45kr/kg</h4>
+            <p>The most fragrant on  this side of the mississippi</p>
+            <div class="image"><img src="app/images/phaedra-botanicals-qSWR9VTdab0-unsplash.jpg"></div>
+            <div class="link"><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#modelId4">
+              Learn more <i class="fas fa-arrow-right"></i>
+            </button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Button trigger modal -->
+    <!-- Modal 1-->
+    <div class="modal fade" id="modelId1" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h3>Not a Plum</h3>
+              <h4>Starting at 20kr/kg</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>It's what the market asked for, and we are disrupting the industry.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit odit quasi quis expedita voluptate sapiente deserunt similique deleniti nisi?</p>
+                </div>
+                <div class="col-md-6"><img src="app/images/mockup-graphics-Kl3467edwsE-unsplash.jpg" alt=""></div>
+              
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--modal 2  -->
+    <div class="modal fade" id="modelId2" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h3>Edible Plums</h3>
+              <h4>Starting at 80kr/kg</h4>
+                
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>If your mouth could choose</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit odit quasi quis expedita voluptate sapiente deserunt similique deleniti nisi?</p>
+                </div>
+                <div class="col-md-6"><img src="app/images/mockup-graphics-2BeAHd_Kmf8-unsplash.jpg" alt=""></div>
+              
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 3 -->
+    <div class="modal fade" id="modelId3" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h3>Plump Plums</h3>
+              <h4>Starting at 25kr/kg</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>It's what's for dinner</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit odit quasi quis expedita voluptate sapiente deserunt similique deleniti nisi?</p>
+                </div>
+                <div class="col-md-6"><img src="app/images/rebecca-matthews-6pagvvy09eI-unsplash.jpg" alt=""></div>
+              
+            </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal 4 -->
+    <div class="modal fade" id="modelId4" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h3>Liquid Plums</h3><br>
+              <h4>Starting at 45kr/kg</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Masterfully liquified for all your plummie needs.</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id reprehenderit odit quasi quis expedita voluptate sapiente deserunt similique deleniti nisi?</p>
+                </div>
+                <div class="col-md-6"><img src="/BootstrapShowcase/app/images/phaedra-botanicals-qSWR9VTdab0-unsplash.jpg" alt=""></div>
+              
+            </div>
+          </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <a href="https://www.erikbohle.com">www.erikbohle.com</a>
+    </footer>
+
+    <!-- awesomeplete searchbar -->
+    <link rel="stylesheet" href="app/styles/awesomplete.css" />
+    <script src="app/scripts/awesomplete.js" async></script>
+    <!-- jquery,popper,bootstrap -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app/scripts/app.js"></script>
+  </body>
+</html>
