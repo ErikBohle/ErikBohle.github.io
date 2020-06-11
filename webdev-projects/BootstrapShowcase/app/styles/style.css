@@ -30,7 +30,7 @@
 }
 
 .banner .social .twitter {
-  background-image: url(/BootstrapShowcase/app/images/Twitter_Logo_WhiteOnBlue.png);
+  background-image: url(/webdev-projects/BootstrapShowcase/app/images/Twitter_Logo_WhiteOnBlue.png);
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -41,7 +41,7 @@
 }
 
 .banner .social .instagram {
-  background-image: url(/BootstrapShowcase/app/images/glyph-logo_May2016.png);
+  background-image: url(/webdev-projects/BootstrapShowcase/app/images/glyph-logo_May2016.png);
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -52,7 +52,7 @@
 }
 
 .banner .social .email {
-  background-image: url(/BootstrapShowcase/app/images/hiclipart.com.png);
+  background-image: url(/webdev-projects/BootstrapShowcase/app/images/hiclipart.com.png);
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -63,7 +63,7 @@
 }
 
 .banner .social .facebook {
-  background-image: url(/BootstrapShowcase/app/images/badgeRGB-black.png);
+  background-image: url(/webdev-projects/BootstrapShowcase/app/images/badgeRGB-black.png);
   display: inline-block;
   height: 25px;
   width: 25px;
@@ -74,7 +74,7 @@
 }
 
 .banner .image {
-  background-image: url(/BootstrapShowcase/app/images/harshal-s-hirve-516rZwqZ_-I-unsplash.png);
+  background-image: url(/webdev-projects/BootstrapShowcase/app/images/harshal-s-hirve-516rZwqZ_-I-unsplash.png);
   height: 25rem;
   background-position: center top;
   background-size: cover;
