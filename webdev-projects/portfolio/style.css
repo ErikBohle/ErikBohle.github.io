@@ -197,6 +197,9 @@ body {
   .info h3 {
     text-align: center;
   }
+  .links {
+    height: 3em;
+  }
 }
 
 .stars,
