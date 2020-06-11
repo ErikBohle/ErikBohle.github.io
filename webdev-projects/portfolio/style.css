@@ -16,6 +16,12 @@ body {
 
 /* Proficiencies */
 /* portfolio and projects */
+.info {
+  margin-left: 10rem;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
 #portfolio {
   display: -ms-grid;
   display: grid;
@@ -53,10 +59,10 @@ body {
 }
 
 .item1 {
-  color: #f1f1f1;
+  color: #111111;
+  min-width: 5%;
   max-width: 25%;
-  background: -webkit-gradient(linear, left top, right top, from(#000000), to(#434343));
-  background: linear-gradient(to right, #000000, #434343);
+  background: #f5f6f7;
   border: #ccc solid 2px;
   margin: 10px;
   padding: 10px;
@@ -69,7 +75,7 @@ body {
 .item1 a {
   padding: 0.5em 0.5em;
   margin: 5px;
-  width: 50%;
+  min-width: 50%;
   text-decoration: none;
   border: #111111 solid 2px;
   border-radius: 5px;
@@ -85,6 +91,11 @@ body {
 .item1 a a:active {
   text-decoration: none;
   color: #eee2dc;
+}
+
+.item1 a:hover {
+  color: #111111;
+  background-color: #cec7c7;
 }
 
 .item1 ul {
@@ -109,7 +120,7 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #f5f6f7;
   display: block;
 }
 
@@ -117,11 +128,11 @@ body {
   color: #f1f1f1;
 }
 
-#contact {
+#contact #cv {
   font-size: 1.5em;
 }
 
-#contact:hover {
+#contact #cv:hover {
   cursor: default;
   color: #818181;
 }
@@ -194,6 +205,7 @@ header {
 
 /* Style page content */
 .main {
+  height: 70vh;
   margin-left: 10rem;
   /* Same as the width of the sidebar */
   padding: 0px 10px;
@@ -218,6 +230,10 @@ header {
     margin-left: 0rem;
     padding: 0px 10px;
     margin-top: 6em;
+  }
+  .info {
+    margin: 0rem;
+    padding: 0px 10px;
   }
   .mobileNav {
     display: inline;
