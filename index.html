@@ -16,25 +16,19 @@
 
 <!-- 
   TODO:
-  -fix image sizes in restaurant site 
+  -fix image sizes in restaurant site + bootstrap prod. page
   max-width:50%;
   max-height:50%; resize images to fit mobile
-  
-  -Enter your CV in the href in resume/cv of sidebar
-
-  
-
-  -infopages
 
   - what jobs i'm interested in
 
-  - en/no button to swap between languages -> toggle through JS or through css?
+  - about me section -> sell yourself
 
-  - animate a css background in JS
-
-  - add readme to the github projects
+  - add readme to all github projects
 
   - fix sidebar initial width in knivsliping.
+
+  - clean up scss - portfolio -> convert to BEM?
 -->
 <header>
   <div class="links">
@@ -42,28 +36,32 @@
     <a target="blank" href="https://github.com/ErikBohle"><i class="fab fa-github-square"></i>
   GitHub</a>
   <a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a>
-    <a href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
+    <a target="blank" href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
       Codepen</a>
       <a id="cv" href="/webdev-projects/cvErikBohle.pdf" download="">CV: Norsk </a>
       <a id="cv" href="webdev-projects/cvEngErikBohle.pdf" download="">CV: English</a>
     </div>
 </header>
-<div class="main">
 
-  <h1>Hi, I'm Erik Bøhle, a Front End Developer living and working in  Oslo, Norway.</h1>
+
+<div class="main">
+  <div class="main--text">
+    <h1>Hi, I'm <span class="name">Erik Bøhle</span>, a Front End Developer living and working in <span class="name"> Oslo</span>, Norway.</h1>
   <p>I make websites and web-applications</p>
-  <p>Interested?<br> Drop me a line</p>
-</div>
-<div class="stars"></div>
+  <p>Interested?<br> Drop me a line</p></div>
+  <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="clouds"></div>
+  
+</div>
+
 
 
 
 <!-- Portfolio and projects -->
 
 <div class="info">
-<div class="container">     <H3 id="portfolio" class="portfolio">Projects</H2></div>
+<div class="container">     <H3 id="portfolio" class="portfolio name">Projects</H2></div>
   <div id="container" class="Container">
     <div  class="item1">
       <h3>React MovieDB searcher</h3>
