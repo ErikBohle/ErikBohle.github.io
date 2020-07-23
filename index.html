@@ -24,8 +24,6 @@
 
   - about me section -> sell yourself
 
-  - add readme to all github projects
-
   - fix sidebar initial width in knivsliping.
 
   - clean up scss - portfolio -> convert to BEM?
@@ -50,11 +48,11 @@
 <div class="main">
   <div class="main--text">
     <h1>Hi, I'm <span class="name">Erik Bøhle</span>, a Front End Developer living and working in <span class="name"> Oslo</span>, Norway.</h1>
-  <p>I make websites and web-applications</p>
-  <p>Interested?<br> Drop me a line</p></div>
-  <div class="stars"></div>
+  <p>I make websites and web-applications. <br> Interested? Drop me a line</p>
+  </div>
+  <!-- <div class="stars"></div>
 <div class="twinkling"></div>
-<div class="clouds"></div>
+<div class="clouds"></div> -->
   
 </div>
 
@@ -67,10 +65,29 @@
 <div class="container">     <H3 id="portfolio" class="portfolio name">Projects</H2></div>
   <div id="container" class="Container">
     <div  class="item1">
+      <h3>React Storepage</h3>
+      <a target="blank" href="https://zen-yonath-d51459.netlify.app/">Live version</a>
+      <a target="blank" href="https://github.com/ErikBohle/movie-searcher">Github</a>
+      
+      <p>A store app made in React with
+        <ul>
+        <li>social media authentication</li> 
+        <li>Bi-directional data flow and live state editing</li>  
+        <li> Deployed to Netlify at the moment.</li>
+        <li>Persisting state using local storage and firebase</li>
+      </ul>
+        <br><hr> To use you will need to log in to a new store, or use the link below to see a premade store.</p>
+        <a target="blank" href="https://zen-yonath-d51459.netlify.app/store/bewildered-sparkling-halves">Premade</a>
+    </div>
+    <div  class="item1">
       <h3>React MovieDB searcher</h3>
       <a target="blank" href="https://stupefied-yalow-697b1d.netlify.app/">Live version</a>
       <a target="blank" href="https://github.com/ErikBohle/movie-searcher">Github</a>
       <p>A React app i made using a tutorial, that uses an api to display movie information.</p>
+      <ul>
+        <li>Connects to an API to display information about movies</li>      
+        <li> Deployed to Netlify</li>
+      </ul>
     </div>
     <div  class="item1">
       <h3>Bootstrap Product Page</h3>
@@ -135,7 +152,7 @@
     <div class="languages">
       <div class="item item1 ul">
         <h2 >Languages, frameworks and libraries</h2>
-        <p>HTML, CSS3, JavaScript, Python, SASS, Bootstrap, jQuery</p>
+        <p>React, HTML, CSS, JavaScript, Python, SASS, Bootstrap, jQuery</p>
     </div>
 
 
