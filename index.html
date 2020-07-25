@@ -6,7 +6,12 @@
   <title>Erik Bøhle | Front End Developer</title>
   <meta name="description" content="Portfolio, front-end, front end">
   <meta name="keywords" content="Portfolio, front-end, front end">
+  <!-- normalize -->
+  <link rel="stylesheet" href="webdev-projects/portfolio/normalize.css">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="webdev-projects/portfolio/style.css">
+  <!-- scripts -->
   <script src="/webdev-projects/portfolio/app.js"></script>
   <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
   <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
@@ -37,10 +42,11 @@
     <a target="blank" href="https://github.com/ErikBohle"><i class="fab fa-github-square"></i>
   GitHub</a>
   <a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a>
-    <a target="blank" href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
-      Codepen</a>
-      <a id="cv" href="/webdev-projects/cvErikBohle.pdf" download="">CV: Norsk (Ikke tilgjengelig) </a>
-      <a id="cv" href="webdev-projects/cvEngErikBohle.pdf" download="">CV: English</a>
+    <!-- <a target="blank" href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
+      Codepen</a> -->
+      <!-- <a id="cv" href="/webdev-projects/cvErikBohle.pdf" download="">CV: Norsk (Ikke tilgjengelig) </a> -->
+      <a id="cv" href="webdev-projects/cvEngErikBohle.pdf" download=""><i class="fa fa-cloud-download" aria-hidden="true"></i>
+        Resume</a>
     </div>
 </header>
 
@@ -48,8 +54,11 @@
 <div class="main">
   <div class="main--text">
     <h1>Hi, I'm <span class="name">Erik Bøhle</span>, a Front End Developer living and working in <span class="name"> Oslo</span>, Norway.</h1>
-  <p>I make websites and web-applications. <br> Interested? Drop me a line</p>
+
+
+   
   </div>
+  
   <!-- <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="clouds"></div> -->
@@ -69,14 +78,14 @@
       <a target="blank" href="https://zen-yonath-d51459.netlify.app/">Live version</a>
       <a target="blank" href="https://github.com/ErikBohle/CatchOfTheDay">Github</a>
       
-      <p>A store app made in React with
+      <p>A store app made in React with:
         <ul>
-        <li>social media authentication</li> 
+        <li>OAuth Authentication through 3 providers</li> 
         <li>Bi-directional data flow and live state editing</li>  
-        <li> Deployed to Netlify at the moment.</li>
+        <li>Deployed through Netlify</li>
         <li>Persisting state using local storage and firebase</li>
       </ul>
-        <br><hr> To use you will need to log in to a new store, or use the link below to see a premade store if you don't wish to log in.</p>
+        <hr> To use you will need to log in to a new store, or use the link below to see a premade store if you don't wish to log in.</p>
         <a target="blank" href="https://zen-yonath-d51459.netlify.app/store/bewildered-sparkling-halves">Premade</a>
     </div>
     <div  class="item1">
@@ -90,16 +99,16 @@
       </ul>
     </div>
     <div  class="item1">
-      <h3>Bootstrap Product Page</h3>
+      <h3>An Ode To Plums</h3>
       <a target="blank" href="webdev-projects/BootstrapShowcase/index.html">Live version</a>
       <a target="blank" href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/BootstrapShowcase">Github</a>
-      <p>This is a product page i made using Bootstrap and jQuery. Where i focused on using new libraries and using JS to filter and sort.</p>
+      <p>This is a mock product page that has filter and search functionality, built with jQuery and Bootstrap</p>
     </div>
         <div  class="item1">
       <h3>Construction Website</h3>
       <a target="blank" href="webdev-projects/constructionSite/index.html">Live version</a>
       <a target="blank" href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/constructionSite">Github</a>
-      <p>A project where i used grid and flexbox interchangeably, and used javascript to make a picture slideshow, and hide navbars. </p>
+      <p>A mock webpage for a construction company</p>
     </div>
     <div  class="item1">
       <h3>JavaScript Budget App</h3>
@@ -112,23 +121,21 @@
       <h3>Restaurant Website</h3>
       <a target="blank" href="webdev-projects/restaurantWebsite/app/index.html">Live version</a>
       <a target="blank" href="https://github.com/ErikBohle/restaurantWebsite">Github</a>
-      <p>A project where i mainly used Grid.
-        Used dom manipulation in JavaScript to create collapsible sidebars,
-        dropdown menus. </p>
+      <p>A mock restaurant website, where i practiced grid, dom manipulation and made multilingual pages, dropdown menus and collapsible sidebars</p>
     </div>
-    <div  class="item1">
+    <!-- <div  class="item1">
       <h3>Knifesharpening Website</h3>
       <a target="blank" href="webdev-projects/HvassKnivsliping/index.html">Website</a>
       <a target="blank" href="https://github.com/ErikBohle/HvassKnivsliping">Code</a>
       <p>Simple website focusing on gridbased displays and implementing night mode. (barebones)</p>
-    </div>
+    </div> -->
     
-    <div  class="item1">
+    <!-- <div  class="item1">
       <h3>Kombucha Calculator</h3>
       <a target="blank" href="https://kombuchacalculator.com/">Website</a>
       <a target="blank" href="https://github.com/ErikBohle/kombuchacalculator">Code</a>
       <p>This project was made with HTML, CSS and JS. (early)</p>
-    </div>
+    </div> -->
 
   </div>
 
@@ -151,8 +158,25 @@
     <!-- Languages -->
     <div class="languages">
       <div class="item item1 ul">
-        <h2 >Languages, frameworks and libraries</h2>
-        <p>React, HTML, CSS, JavaScript, Python, SASS, Bootstrap, jQuery</p>
+        <h2 >Languages</h2>
+        <p>HTML, CSS3(SCSS), JavaScript, Python</p>
+    </div>
+      <div class="item item1 ul">
+        <h2 >Frameworks and libraries</h2>
+        <p>React,Redux, SASS, Bootstrap, jQuery</p>
+    </div>
+      <div class="item item1 ul">
+        <h2 >Methods and tools</h2>
+        <p>BEM, Webpack, Testing(currently learning)</p>
+    </div>
+    </div>
+    <!-- About me -->
+    <div id="about" class="about">
+      <div class="item item1">
+        <h2>Hobbies and interests</h2>
+        <p>As a former chef i love cooking, and in my spare time i brew a lot of beer and wine, i also grow vegetables, fish trout, and forage for mushrooms in autumn.</p>
+        <p>And a couple of times a month i volunteer at a suicide prevention hotline.</p>
+      </div>
     </div>
 
 
