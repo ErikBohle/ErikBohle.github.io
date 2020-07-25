@@ -50,8 +50,6 @@ body {
 .info {
   margin: auto;
 
-  padding: 1em 11em;
-
   width: 60vw;
   justify-self: center;
 }
@@ -66,7 +64,7 @@ body {
 .Container {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   grid-auto-rows: auto;
   gap: 1rem;
 }
@@ -121,12 +119,12 @@ body {
 
 /* Style page content */
 .main {
-  height: 40vh;
-  margin-bottom: 150px;
+  height: auto;
+  text-align: center;
 }
 .main--text {
   max-width: 45vw;
-  padding: 0px 10px;
+
   z-index: 32;
   position: relative;
   margin: 0 auto;

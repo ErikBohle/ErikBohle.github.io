@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Erik Bøhle | Front End Developer</title>
-  <meta name="description" content="Portfolio, front-end, front end">
-  <meta name="keywords" content="Portfolio, front-end, front end">
-  <!-- normalize -->
-  <link rel="stylesheet" href="webdev-projects/portfolio/normalize.css">
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="webdev-projects/portfolio/style.css">
-  <!-- scripts -->
-  <script src="/webdev-projects/portfolio/app.js"></script>
-  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-  <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  
-
-<!-- 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Erik Bøhle | Frontend developer</title>
+    <meta name="description" content="Portfolio, front-end, front end" />
+    <meta name="keywords" content="Portfolio, front-end, front end" />
+    <!-- normalize -->
+    <link rel="stylesheet" href="webdev-projects/portfolio/normalize.css" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="webdev-projects/portfolio/style.css" />
+    <!-- scripts -->
+    <script src="/webdev-projects/portfolio/app.js"></script>
+    <script
+      type="text/javascript"
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+    ></script>
+    <script src="https://kit.fontawesome.com/0202afe07a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- 
   TODO:
   -fix image sizes in restaurant site + bootstrap prod. page
   max-width:50%;
@@ -36,158 +39,176 @@
 
   - Change this over to React and make a single page app for smaller projects
 -->
-<header>
-  <div class="links">
-    <a target="blank" href="https://www.linkedin.com/in/erikbohle"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    <a target="blank" href="https://github.com/ErikBohle"><i class="fab fa-github-square"></i>
-  GitHub</a>
-  <a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a>
-    <!-- <a target="blank" href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
+    <header>
+      <div class="links">
+        <a target="blank" href="https://www.linkedin.com/in/erikbohle"
+          ><i class="fab fa-linkedin"></i> LinkedIn</a
+        >
+        <a target="blank" href="https://github.com/ErikBohle"
+          ><i class="fab fa-github-square"></i> GitHub</a
+        >
+        <a href="mailto:erik.bohle@gmail.com"><i class="fas fa-envelope-open-text"></i> Email</a>
+        <!-- <a target="blank" href="https://codepen.io/erikbohle"><i class="fab fa-codepen"></i>
       Codepen</a> -->
-      <!-- <a id="cv" href="/webdev-projects/cvErikBohle.pdf" download="">CV: Norsk (Ikke tilgjengelig) </a> -->
-      <a id="cv" href="webdev-projects/cvEngErikBohle.pdf" download=""><i class="fa fa-cloud-download" aria-hidden="true"></i>
-        Resume</a>
-    </div>
-</header>
+        <!-- <a id="cv" href="/webdev-projects/cvErikBohle.pdf" download="">CV: Norsk (Ikke tilgjengelig) </a> -->
+        <a id="cv" href="webdev-projects/cvEngErikBohle.pdf" download=""
+          ><i class="fa fa-cloud-download" aria-hidden="true"></i> Resume</a
+        >
+      </div>
+    </header>
 
+    <div class="main">
+      <div class="main--text">
+        <h1>
+          Hi, I'm <span class="name">Erik Bøhle</span>, a Frontend developer living and working in
+          <span class="name"> Oslo</span>, Norway.
+        </h1>
+      </div>
 
-<div class="main">
-  <div class="main--text">
-    <h1>Hi, I'm <span class="name">Erik Bøhle</span>, a Front End Developer living and working in <span class="name"> Oslo</span>, Norway.</h1>
-
-
-   
-  </div>
-  
-  <!-- <div class="stars"></div>
+      <!-- <div class="stars"></div>
 <div class="twinkling"></div>
 <div class="clouds"></div> -->
-  
-</div>
-
-
-
-
-<!-- Portfolio and projects -->
-
-<div class="info">
-<div class="container">     <H3 id="portfolio" class="portfolio name">Projects</H2></div>
-  <div id="container" class="Container">
-    <div  class="item1">
-      <h3>React Store Page</h3>
-      <a target="blank" href="https://zen-yonath-d51459.netlify.app/">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/CatchOfTheDay">Github</a>
-      
-      <p>A store app made in React with:
-        <ul>
-        <li>OAuth Authentication through 3 providers</li> 
-        <li>Bi-directional data flow and live state editing</li>  
-        <li>Deployed through Netlify</li>
-        <li>Persisting state using local storage and firebase</li>
-      </ul>
-        <hr> To use you will need to log in to a new store, or use the link below to see a premade store if you don't wish to log in.</p>
-        <a target="blank" href="https://zen-yonath-d51459.netlify.app/store/bewildered-sparkling-halves">Premade</a>
-    </div>
-    <div  class="item1">
-      <h3>React MovieDB searcher</h3>
-      <a target="blank" href="https://stupefied-yalow-697b1d.netlify.app/">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/movie-searcher">Github</a>
-      <p>A React app i made using a tutorial, that uses an api to display movie information.</p>
-      <ul>
-        <li>Connects to an API to display information about movies</li>      
-        <li> Deployed to Netlify</li>
-      </ul>
-    </div>
-    <div  class="item1">
-      <h3>An Ode To Plums</h3>
-      <a target="blank" href="webdev-projects/BootstrapShowcase/index.html">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/BootstrapShowcase">Github</a>
-      <p>This is a mock product page that has filter and search functionality, built with jQuery and Bootstrap</p>
-    </div>
-        <div  class="item1">
-      <h3>Construction Website</h3>
-      <a target="blank" href="webdev-projects/constructionSite/index.html">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/constructionSite">Github</a>
-      <p>A mock webpage for a construction company</p>
-    </div>
-    <div  class="item1">
-      <h3>JavaScript Budget App</h3>
-      <a target="blank" href="webdev-projects/budgetTrackerJS/index.html">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/budgetTrackerJS">Github</a>
-      <p>This is a Budget tracker i made in JavaScript using jQuery.</p>
     </div>
 
-    <div  class="item1">
-      <h3>Restaurant Website</h3>
-      <a target="blank" href="webdev-projects/restaurantWebsite/app/index.html">Live version</a>
-      <a target="blank" href="https://github.com/ErikBohle/restaurantWebsite">Github</a>
-      <p>A mock restaurant website, where i practiced grid, dom manipulation and made multilingual pages, dropdown menus and collapsible sidebars</p>
-    </div>
-    <!-- <div  class="item1">
+    <!-- Portfolio and projects -->
+
+    <div class="info">
+      <div class="container"><h3 id="portfolio" class="portfolio name">Projects</h3></div>
+      <div id="container" class="Container">
+        <div class="item1">
+          <h3>React Store Page</h3>
+          <a target="blank" href="https://zen-yonath-d51459.netlify.app/">Live version</a>
+          <a target="blank" href="https://github.com/ErikBohle/CatchOfTheDay">Github</a>
+
+          <p>A store app made in React with:</p>
+          <ul>
+            <li>OAuth Authentication through 3 providers</li>
+            <li>Bi-directional data flow and live state editing</li>
+            <li>Deployed through Netlify</li>
+            <li>Persisting state using local storage and firebase</li>
+          </ul>
+          <hr />
+          <p>
+            To use you will need to log in to a new store, or use the link below to see a premade
+            store if you don't wish to log in.
+          </p>
+          <a
+            target="blank"
+            href="https://zen-yonath-d51459.netlify.app/store/bewildered-sparkling-halves"
+            >Premade</a
+          >
+        </div>
+        <div class="item1">
+          <h3>React MovieDB searcher</h3>
+          <a target="blank" href="https://stupefied-yalow-697b1d.netlify.app/">Live version</a>
+          <a target="blank" href="https://github.com/ErikBohle/movie-searcher">Github</a>
+          <p>A React app i made using a tutorial, that uses an api to display movie information.</p>
+          <ul>
+            <li>Connects to an API to display information about movies</li>
+            <li>Deployed to Netlify</li>
+          </ul>
+        </div>
+        <div class="item1">
+          <h3>An Ode To Plums</h3>
+          <a target="blank" href="webdev-projects/BootstrapShowcase/index.html">Live version</a>
+          <a
+            target="blank"
+            href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/BootstrapShowcase"
+            >Github</a
+          >
+          <p>
+            This is a mock product page that has filter and search functionality, built with jQuery
+            and Bootstrap
+          </p>
+        </div>
+        <div class="item1">
+          <h3>Construction Website</h3>
+          <a target="blank" href="webdev-projects/constructionSite/index.html">Live version</a>
+          <a
+            target="blank"
+            href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/constructionSite"
+            >Github</a
+          >
+          <p>A mock webpage for a construction company</p>
+        </div>
+        <div class="item1">
+          <h3>JavaScript Budget App</h3>
+          <a target="blank" href="webdev-projects/budgetTrackerJS/index.html">Live version</a>
+          <a
+            target="blank"
+            href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/budgetTrackerJS"
+            >Github</a
+          >
+          <p>This is a Budget tracker i made in JavaScript using jQuery.</p>
+        </div>
+
+        <div class="item1">
+          <h3>Restaurant Website</h3>
+          <a target="blank" href="webdev-projects/restaurantWebsite/app/index.html">Live version</a>
+          <a target="blank" href="https://github.com/ErikBohle/restaurantWebsite">Github</a>
+          <p>
+            A mock restaurant website, where i practiced grid, dom manipulation and made
+            multilingual pages, dropdown menus and collapsible sidebars
+          </p>
+        </div>
+        <!-- <div  class="item1">
       <h3>Knifesharpening Website</h3>
       <a target="blank" href="webdev-projects/HvassKnivsliping/index.html">Website</a>
       <a target="blank" href="https://github.com/ErikBohle/HvassKnivsliping">Code</a>
       <p>Simple website focusing on gridbased displays and implementing night mode. (barebones)</p>
     </div> -->
-    
-    <!-- <div  class="item1">
+
+        <!-- <div  class="item1">
       <h3>Kombucha Calculator</h3>
       <a target="blank" href="https://kombuchacalculator.com/">Website</a>
       <a target="blank" href="https://github.com/ErikBohle/kombuchacalculator">Code</a>
       <p>This project was made with HTML, CSS and JS. (early)</p>
     </div> -->
+      </div>
 
-  </div>
-
-    <!-- <div class="item1">
+      <!-- <div class="item1">
       <h3>Dice game</h3>
         <a target="blank" href="/webdev-projects/pig-game/index.html">Live version</a>
         <a target="blank" href="https://codepen.io/erikbohle/pen/JjYvzPP">Code</a>
       <p>This is a javaScript game i made using DOM manuipulation (made using template)</p>
     </div> -->
 
-    <!-- <div class="item1">     
+      <!-- <div class="item1">     
       <h3>Satiety index</h3>
       <a target="blank" href="https://www.satietyindex.com/">Live version</a>
       <a target="blank" href="">Code</a>
       <p>This is a information website about a satiety index, visualising data with Chart.js </p>
     </div> -->
-
-
     </div>
     <!-- Languages -->
     <div class="languages">
       <div class="item item1 ul">
-        <h2 >Languages</h2>
+        <h2>Languages</h2>
         <p>HTML, CSS3(SCSS), JavaScript, Python</p>
-    </div>
+      </div>
       <div class="item item1 ul">
-        <h2 >Frameworks and libraries</h2>
+        <h2>Frameworks and libraries</h2>
         <p>React,Redux, SASS, Bootstrap, jQuery</p>
-    </div>
+      </div>
       <div class="item item1 ul">
-        <h2 >Methods and tools</h2>
+        <h2>Methods and tools</h2>
         <p>BEM, Webpack, Testing(currently learning)</p>
-    </div>
+      </div>
     </div>
     <!-- About me -->
     <div id="about" class="about">
       <div class="item item1">
         <h2>Hobbies and interests</h2>
-        <p>As a former chef i love cooking, and in my spare time i brew a lot of beer and wine, i also grow vegetables, fish trout, and forage for mushrooms in autumn.</p>
+        <p>
+          As a former chef i love cooking, and in my spare time i brew a lot of beer and wine, i
+          also grow vegetables, fish trout, and forage for mushrooms in autumn.
+        </p>
         <p>And a couple of times a month i volunteer at a suicide prevention hotline.</p>
       </div>
     </div>
 
-
-
-</div>
-</div>
-
-
-<div class="footer"><a href="#top"><strong>Click here to go back to the top</strong></a></div>
-    
-
-  
-</body>
+    <div class="footer">
+      <a href="#top"><strong>Click here to go back to the top</strong></a>
+    </div>
+  </body>
 </html>
