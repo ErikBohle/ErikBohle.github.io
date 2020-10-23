@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Erik Bøhle | Front End Developer Portfolio</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css" />
+    <!-- github activity css -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css" />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- Thanks for looking through the code! I'm currently working with wordpress development, exploring php and studying at USN -->
+  </head>
+
+  <body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+      <div class="container clearfix">
+        <!-- <img
+          class="profile-image img-fluid float-left rounded-circle"
+          src="assets/images/profile.png"
+          alt="profile image"
+        /> -->
+        <div class="profile-content float-left">
+          <h1 class="name">Erik Bøhle</h1>
+          <h2 class="desc">Developer</h2>
+          <ul class="social list-inline">
+            <li class="list-inline-item">
+              <a target="_blank" href="https://www.linkedin.com/in/erikbohle/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a target="_blank" href="https://github.com/ErikBohle"
+                ><i class="fab fa-github-alt"></i
+              ></a>
+            </li>
+            <!-- social links -->
+
+            <!-- <li class="list-inline-item">
+                                      <a href="#"><i class="fab fa-twitter"></i></a>
+                                    </li> -->
+            <!-- <li class="list-inline-item">
+              <a href="#"><i class="fab fa-stack-overflow"></i></a>
+            </li> -->
+            <!-- <li class="list-inline-item last-item">
+              <a href="#"><i class="fab fa-codepen"></i></a>
+            </li> -->
+          </ul>
+        </div>
+        <!--//profile-->
+        <a
+          class="btn btn-cta-primary float-right"
+          href="mailto:Erik.bohle@gmail.com"
+          target="_blank"
+          ><i class="fas fa-paper-plane"></i> Contact Me</a
+        >
+      </div>
+      <!--//container-->
+    </header>
+    <!--//header-->
+
+    <div class="container sections-wrapper">
+      <div class="row">
+        <div class="primary col-lg-8 col-12">
+          <section class="about section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">About Me</h2>
+              <div class="content">
+                <p>
+                  I'm a JavaScript developer with a drive for clean and testable code. I'm currently
+                  looking for new jobs and opportunities, whilst finishing my degree at University
+                  Of South-Eastern Norway.
+                </p>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </section>
+          <!--//section-->
+
+          <section class="latest section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Latest Projects</h2>
+              <div class="content">
+                <div class="item featured text-center">
+                  <div class="featured-image has-ribbon">
+                    <a href="https://zen-yonath-d51459.netlify.app/" target="_blank">
+                      <img
+                        class="img-fluid project-image rounded shadow-sm"
+                        src="assets/images/projects/cotd.JPG"
+                        alt="project name"
+                      />
+                    </a>
+                    <div class="ribbon">
+                      <div class="text">New</div>
+                    </div>
+                  </div>
+
+                  <h3 class="title mb-3">
+                    <a href="https://zen-yonath-d51459.netlify.app/" target="_blank"
+                      >Catch Of The Day - A functional use case of React state management and
+                      websockets</a
+                    >
+                  </h3>
+
+                  <div class="desc text-left">
+                    A store app made in React with:
+                    <ul>
+                      <li>OAuth Authentication through 3 providers</li>
+                      <li>Bi-directional data flow and live state editing</li>
+                      <li>Deployed through Netlify</li>
+                      <li>Persisting state using local storage and firebase</li>
+                    </ul>
+                    <br />
+
+                    To use you will need to log in to a new store, or use the link below to see a
+                    premade store if you don't wish to log in.
+                  </div>
+                  <!--//desc-->
+                  <a
+                    class="btn btn-cta-secondary"
+                    href="https://zen-yonath-d51459.netlify.app/"
+                    target="_blank"
+                    >Live Site</a
+                  >
+                  <a
+                    class="btn btn-cta-secondary"
+                    href="https://github.com/ErikBohle/CatchOfTheDay"
+                    target="_blank"
+                    >View on Github</a
+                  >
+                  <a
+                    class="btn btn-cta-secondary"
+                    href="https://zen-yonath-d51459.netlify.app/store/bewildered-sparkling-halves"
+                    target="_blank"
+                    >Premade</a
+                  >
+                </div>
+                <!--//item-->
+                <hr class="divider" />
+                <div class="item row">
+                  <a class="col-md-4 col-12" href="https://www.trebjorn.com/" target="_blank">
+                    <img
+                      class="img-fluid project-image rounded shadow-sm"
+                      src="assets/images/projects/trebjorn.PNG"
+                      alt="project name"
+                    />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title">
+                      <a href="https://www.trebjorn.com/" target="_blank">Trebjørn Design </a>
+                    </h3>
+                    <p class="mb-2">
+                      The homepage for my Web development company, here you can also browse some of
+                      the wordpress sites i've made
+                    </p>
+                    <p>
+                      &nbsp; &nbsp;
+                      <a class="more-link" href="https://www.trebjorn.com/" target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Live site</a
+                      >
+                    </p>
+                  </div>
+                  <!--//desc-->
+                </div>
+                <!-- <div class="item row">
+                  <a class="col-md-4 col-12" href="https://markasopp.com/" target="_blank">
+                    <img
+                      class="img-fluid project-image rounded shadow-sm"
+                      src="assets/images/projects/markasopp.PNG"
+                      alt="project name"
+                    />
+                  </a> -->
+                <!-- <div class="desc col-md-8 col-12">
+                    <h3 class="title">
+                      <a href="https://markasopp.com/" target="_blank">Markasopp </a>
+                    </h3>
+                    <p class="mb-2">
+                      A webstore i made with a CMS (Wordpress) that has Vipps and Bring integrations
+                      (payment and shipping).
+                    </p>
+                    <p>
+                      &nbsp; &nbsp;
+                      <a class="more-link" href="https://markasopp.com/" target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Live site</a
+                      >
+                    </p>
+                  </div> -->
+                <!--//desc-->
+                <!-- </div> -->
+                <!--//item-->
+                <div class="item row">
+                  <a
+                    class="col-md-4 col-12"
+                    href="https://stupefied-yalow-697b1d.netlify.app/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid project-image rounded shadow-sm"
+                      src="assets/images/projects/reactMDB.JPG"
+                      alt="project name"
+                    />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title">
+                      <a href="https://stupefied-yalow-697b1d.netlify.app/" target="_blank"
+                        >React MovieDB Search
+                      </a>
+                    </h3>
+                    <p class="mb-2">
+                      A React app i made that connects to an api to display movie
+                      information.
+                    </p>
+                    <p>
+                      <a
+                        class="more-link"
+                        href="https://github.com/ErikBohle/movie-searcher"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Github</a
+                      >&nbsp; &nbsp;
+                      <a
+                        class="more-link"
+                        href="https://stupefied-yalow-697b1d.netlify.app/"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Live site</a
+                      >
+                    </p>
+                  </div>
+                  <!--//desc-->
+                </div>
+                <!--//item-->
+                <div class="item row">
+                  <a
+                    class="col-md-4 col-12"
+                    href="https://erikbohle.github.io./webdev-projects/BootstrapShowcase/index.html"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid project-image rounded shadow-sm"
+                      src="assets/images/projects/plumPage.JPG"
+                      alt="project name"
+                    />
+                  </a>
+                  <div class="desc col-md-8 col-12">
+                    <h3 class="title">
+                      <a
+                        href="https://erikbohle.github.io./webdev-projects/BootstrapShowcase/index.html"
+                        target="_blank"
+                        >An Ode To Plums - Product Page</a
+                      >
+                    </h3>
+                    <p class="mb-2">
+                      This is a mock product page that has filter and search functionality, built
+                      with jQuery and Bootstrap
+                    </p>
+                    <p>
+                      <a
+                        class="more-link"
+                        href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/BootstrapShowcase"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Github</a
+                      >
+                      &nbsp; &nbsp;
+
+                      <a
+                        class="more-link"
+                        href="https://erikbohle.github.io./webdev-projects/BootstrapShowcase/index.html"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Live site</a
+                      >
+                    </p>
+                  </div>
+                  <!--//desc-->
+                </div>
+                <!--//item-->
+
+                <!-- Start of budget tracker -->
+                <!-- <div class="item row"> -->
+
+                <!-- <a
+                    class="col-md-4 col-12"
+                    href="https://erikbohle.com/webdev-projects/budgettrackerjs/"
+                    target="_blank"
+                  >
+                    <img
+                      class="img-fluid project-image rounded shadow-sm"
+                      src="assets/images/projects/budget.JPG"
+                      alt="project name"
+                    />
+                  </a> -->
+                <!-- <div class="desc col-md-8 col-12">
+                    <h3 class="title">
+                      <a
+                        href="https://erikbohle.com/webdev-projects/budgettrackerjs/"
+                        target="_blank"
+                        >Budget Manager</a
+                      >
+                    </h3>
+                    <p class="mb-2">
+                      This budget Manager was made in javascript and jQuery to showcase:
+                    </p>
+                    <ul>
+                      <li>Type-coercion</li>
+                      <li>DOM and CSS manipulation</li>
+                    </ul>
+
+                    <p>
+                      <a
+                        class="more-link"
+                        href="https://github.com/ErikBohle/ErikBohle.github.io/tree/master/webdev-projects/budgetTrackerJS"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Github</a
+                      >
+                      &nbsp; &nbsp;
+                      <a
+                        class="more-link"
+                        href="https://erikbohle.com/webdev-projects/budgettrackerjs/"
+                        target="_blank"
+                        ><i class="fas fa-external-link-alt"></i>Live site</a
+                      >
+                    </p>
+                  </div> -->
+                <!-- End of budget tracker -->
+
+                
+                <!-- </div> -->
+              </div>
+
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </section>
+          <!--//section-->
+          <section class="github section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">My GitHub</h2>
+
+              <div id="github-graph" class="github-graph"></div>
+              <!--//github-graph-->
+            </div>
+            <!--//secton-inner-->
+          </section>
+          <section class="experience section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Work Experience</h2>
+              <div class="content">
+                <div class="item">
+                  <h3 class="title">
+                    Web Developer
+                    <span class="place"><a href="#"></a></span>
+                    <span class="year">(2019 - Current)</span>
+                  </h3>
+                  <p>
+                    I'm currently running the design firm Trebjørn Design, where i make wordpress
+                    pages and integrate shipping and payment options to existing sites.
+                  </p>
+                </div>
+                <div class="item">
+                  <h3 class="title">
+                    Restaurant Career
+                    <span class="place"><a href="#"></a></span>
+                    <span class="year">(2007 - 2019)</span>
+                  </h3>
+                  <p>
+                    I've been in the restaurant business ever since i was 13, when i washed dishes
+                    at the restaurant my mother worked at, i quickly got a passion for everything
+                    revolving cooking and making experiences. This translated to working with almost
+                    every aspect of the industry, and propelled me towards working at some of
+                    Norways best restaurants. <br />
+                    <br />
+                    With experiences from being a michelin star cook, to a cafeteria manager, i've
+                    gotten in-depth service experience and logistics skills, i believe can easily
+                    translate into the field of development.
+                  </p>
+                </div>
+                <!--//item-->
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </section>
+          <!--//section-->
+        </div>
+        <!--//primary-->
+        <div class="secondary col-lg-4 col-12">
+          <aside class="info aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading sr-only">Basic Information</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>Oslo,
+                    Norway
+                  </li>
+                  <li>
+                    <i class="fas fa-envelope"></i><span class="sr-only">Email:</span
+                    ><a target="_blank" href="mailto:Erik.bohle@gmail.com">Erik.bohle@gmail.com</a>
+                  </li>
+                  <li>
+                    <i class="fab fa-github-alt"></i><span class="sr-only">Website:</span
+                    ><a target="_blank" href="https://github.com/ErikBohle"
+                      >https://github.com/ErikBohle</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+          <!--//aside-->
+          <aside class="skills aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Skills</h2>
+              <div class="content">
+                <p class="intro">
+                  I have a firm grasp of fundamental frontend technologies, and i am currently
+                  learning frameworks such as React.
+                </p>
+
+                <div class="skillset">
+                  <!--//item-->
+
+                  <div class="item">
+                    <h3 class="level-title">React, Javascript &amp; jQuery</h3>
+                  </div>
+                  <!--//item-->
+
+                  <div class="item">
+                    <h3 class="level-title">HTML5, CSS3, SASS &amp; LESS</h3>
+                  </div>
+
+                  <!--//item-->
+
+                  <p>
+                    <a class="more-link" target="_blank" href="https://github.com/ErikBohle"
+                      ><i class="fas fa-external-link-alt"></i>More on GitHub</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+          <!--//section-->
+          <aside class="education aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Education</h2>
+              <div class="content">
+                <!--//item-->
+                <div class="item">
+                  <h3 class="title">
+                    <i class="fas fa-graduation-cap"></i> Front-end webutvikling
+                  </h3>
+                  <h4 class="university">
+                    University of South-Eastern Norway <span class="year">(2020)</span>
+                  </h4>
+                </div>
+                <div class="item">
+                  <h3 class="title">
+                    <i class="fas fa-graduation-cap"></i> FCC Front-End Certification
+                  </h3>
+                  <h4 class="university">FreeCodeCamp <span class="year">(2020)</span></h4>
+                </div>
+                <div class="item">
+                  <h3 class="title">
+                    <i class="fas fa-graduation-cap"></i> Certified Chef (Fagbrev)
+                  </h3>
+                  <h4 class="university">Sørumsand VGS <span class="year">(20011-2013)</span></h4>
+                </div>
+                <!--//item-->
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+          <!--//section-->
+
+          <aside class="languages aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Languages</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li class="item">
+                    <span class="title"><strong>English:</strong></span>
+                    <span class="level"
+                      >Native Level <br class="visible-xs" /><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+                  <li class="item">
+                    <span class="title"><strong>Norwegian:</strong></span>
+                    <span class="level"
+                      >Native Speaker <br class="visible-xs" /><i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i> <i class="fas fa-star"></i>
+                    </span>
+                  </li>
+                  <!--//item-->
+
+                  <!--//item-->
+                </ul>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+
+          <aside class="list music aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Favourite music and podcasts</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="fas fa-headphones"></i>
+                    <a
+                      target="_blank"
+                      href="https://open.spotify.com/show/6xpiit8aJmwDHk1rKdxmri?si=eNKNE4jjT8WIcNyDwbh3Kw"
+                      >Javascript Jabber</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-headphones"></i>
+                    <a target="_blank" href="https://www.fullstackradio.com/">Full Stack Radio</a>
+                  </li>
+                  <li>
+                    <i class="fas fa-headphones"></i>
+                    <a
+                      target="_blank"
+                      href="https://open.spotify.com/playlist/0eAN3cAWz7nP2zeKoY9v1r?si=HyNjP8xdRV-lmTKlOOJ79g"
+                      >Bad Music For Bad People</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-headphones"></i>
+                    <a
+                      target="_blank"
+                      href="https://open.spotify.com/show/72qiPaoDRf8HkGKEChvG5q?si=Deg9raZnTRSMalEgFE_hhQ"
+                      >Dan Carlin's Hardcore History</a
+                    >
+                  </li>
+                  <li>
+                    <i class="fas fa-headphones"></i>
+                    <a
+                      target="_blank"
+                      href="https://open.spotify.com/show/4kYCRYJ3yK5DQbP5tbfZby?si=d0NVJ4mTQvSfZp3LtgmA4A"
+                      >Syntax - Webdevelopment</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+          <!--//section-->
+          <section class="about section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Hobbies and Interests</h2>
+              <div class="content">
+                <p>
+                  As a former chef i love cooking, and in my spare time i brew beer and wine, i also
+                  grow vegetables, fish trout, and forage for mushrooms in autumn.
+                  <br />
+                  I also enjoy volunteering a few times a week for non-profits in Oslo.
+                </p>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </section>
+
+          <aside class="list conferences aside section">
+            <div class="section-inner shadow-sm rounded">
+              <h2 class="heading">Conferences</h2>
+              <div class="content">
+                <ul class="list-unstyled">
+                  <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <a href="https://event.cw.no/" target="_blank">CIO Forum Test 2020</a> (June,
+                    Oslo)
+                  </li>
+                  <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <a target="_blank" href="https://www.womentech.net/?"
+                      >WomenTech Global Conference 2020</a
+                    >
+                    (June, Oslo)
+                  </li>
+                  <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <a target="_blank" href="https://event.cw.no/Peopletech20">Peopletech 2020</a>
+                    (September, Oslo)
+                  </li>
+                  <li>
+                    <i class="far fa-calendar-alt"></i>
+                    <a target="_blank" href="https://event.cw.no/Sikkerhet20/"
+                      >Sikkerhetsdagen 2020</a
+                    >
+                    (Oktober, Oslo)
+                  </li>
+                </ul>
+              </div>
+              <!--//content-->
+            </div>
+            <!--//section-inner-->
+          </aside>
+          <!--//section-->
+
+          <!--//section-->
+        </div>
+        <!--//secondary-->
+      </div>
+      <!--//row-->
+    </div>
+    <!--//masonry-->
+    <!-- Javascript -->
+    <script src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script src="assets/plugins/popper.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- custom js -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
